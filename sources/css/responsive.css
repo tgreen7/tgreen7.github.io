@@ -44,6 +44,7 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -200,6 +201,11 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	.contact-icons {
+		float: none;
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -369,6 +375,11 @@
 	.info-text {
 		padding-right: 0;	
 	}
+
+	.contact-icons {
+		float: none;
+	}
+
 }
 
 @media (max-width: 320px) {
@@ -383,6 +394,10 @@
 	#twitter-feed {
 		padding-top: 90px;
 		padding-bottom: 120px;	
+	}
+
+	.contact-icons {
+		float: none;
 	}
 }
 
