@@ -1431,11 +1431,12 @@ footer .credits {
 			transform: rotateY(0deg);	
 }
 
-.contact-icons ul li a span {
+
+.contact-icons ul li a i {
 	display: inline-block;
 	margin: 0;
 	color: #55606a;
-	font-size: 32px;
+	font-size: 42px;
 	line-height: 70px;
 	
 	opacity: 0.3;
@@ -1453,6 +1454,7 @@ footer .credits {
 			transform: rotateY(0deg);
 }
 
+
 .contact-icons ul li:hover a,
 .contact-icons ul li.active a {
 	background-color: #DE5E60;	
@@ -1464,8 +1466,8 @@ footer .credits {
 		    transform: rotateY(180deg);
 }
 
-.contact-icons ul li:hover a span,
-.contact-icons ul li.active a span {
+.contact-icons ul li:hover a i,
+.contact-icons ul li.active a i {
 	color: #FFFFFF;
 	opacity: 1;
 	filter: alpha(opacity=100);

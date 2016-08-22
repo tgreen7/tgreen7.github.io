@@ -192,27 +192,27 @@ BRUSHED.contactForm = function(){
 		$contact_form = $('#contact-form');
 		
 		var fields = $contact_form.serialize();
-		$.ajax({
-			type: "POST",
-			url: "sources/php/contact.php",
+		
+		var request = $.ajax({
+	        type: "POST",
+			url: "https://php-contact-form.herokuapp.com/contact.php",
 			data: fields,
-			dataType: 'json',
-			beforeSend: function(xhr, settings) {
-		      console.log('ABOUT TO SEND');
-		    },
-			success: function(response) {
-				console.log('response', response);
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-				
-				$('#response').empty().html(response.html);
-			},
-			failure: function(error) {
-				console.log('error', error);
+	        crossDomain: true,
+	        dataType: "json",
+		})
+		request.done(function(response){
+			console.log('response', response);
+			if(response.status){
+				$('#contact-form input').val('');
+				$('#contact-form textarea').val('');
 			}
-		});
+			
+			$('#response').empty().html(response.html);
+		})
+		request.fail(function (err) {
+			console.log('err', err);
+		})
+
 		return false;
 	});
 }
