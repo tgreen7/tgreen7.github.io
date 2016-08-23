@@ -184,41 +184,6 @@ BRUSHED.fancyBox = function(){
 
 
 /* ==================================================
-   Contact Form
-================================================== */
-
-BRUSHED.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-		
-		var fields = $contact_form.serialize();
-		
-		var request = $.ajax({
-	        type: "POST",
-			url: "https://php-contact-form.herokuapp.com/contact.php",
-			data: fields,
-	        crossDomain: true,
-	        dataType: "json",
-		})
-		request.done(function(response){
-			console.log('response', response);
-			if(response.status){
-				$('#contact-form input').val('');
-				$('#contact-form textarea').val('');
-			}
-			
-			$('#response').empty().html(response.html);
-		})
-		request.fail(function (err) {
-			console.log('err', err);
-		})
-
-		return false;
-	});
-}
-
-
-/* ==================================================
    Twitter Feed
 ================================================== */
 
@@ -399,6 +364,15 @@ BRUSHED.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
 }
 
+/* ==================================================
+   PDF
+================================================== */
+
+BRUSHED.PDFviewer = function() {
+	var pdf = $('#resumePDF');
+    var width = pdf.width();
+    pdf.css('height', width+100);
+}
 
 /* ==================================================
 	Init
@@ -443,17 +417,18 @@ $(document).ready(function(){
 	BRUSHED.goUp();
 	BRUSHED.filter();
 	BRUSHED.fancyBox();
-	BRUSHED.contactForm();
-	BRUSHED.tweetFeed();
 	BRUSHED.scrollToTop();
 	BRUSHED.utils();
 	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
+
+	BRUSHED.PDFviewer();
 });
 
 $(window).resize(function(){
 	BRUSHED.mobileNav();
+	BRUSHED.PDFviewer();
 });
 
 });
