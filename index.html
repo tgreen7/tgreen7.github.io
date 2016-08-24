@@ -24,6 +24,9 @@
 <!-- Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Shortcodes -->
+<link href="sources/css/shortcodes.css" rel="stylesheet">
+
 <!-- Main Style -->
 <link href="sources/css/main.css" rel="stylesheet">
 
@@ -36,9 +39,6 @@
 
 <!-- Font Icons -->
 <link href="sources/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="sources/css/shortcodes.css" rel="stylesheet">
 
 <!-- Responsive -->
 <link href="sources/css/responsive.css" rel="stylesheet">
@@ -112,26 +112,32 @@
 <!-- End Homepage Slider -->
 
 <!-- Header -->
-<header>
-    <div class="sticky-nav">
-        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-            <a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
-        </div>
-        
-        <nav id="menu">
-            <ul id="menu-nav">
-                <li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">Our Work</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="shortcodes.html" class="external">Shortcodes</a></li>
-            </ul>
-        </nav>
-        
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" title="Brushed | Responsive One Page Template">Brushed</a>
     </div>
-</header>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="current"><a href="#work">Home</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 <!-- End Header -->
 
 <!-- Our Work Section -->
@@ -150,27 +156,25 @@
         
         <!-- Portfolio Projects -->
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-3">
                 <!-- Filter -->
                 <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
+                    <ul id="filters" class="option-set">
                         <li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
+                        <li><a href="#filter" data-filter="*" class="selected">All Projects</a></li>
+                        <li><a href="#filter" data-filter=".design">Design</a></li>
+                        <li><a href="#filter" data-filter=".photography">Photography</a></li>
+                        <li><a href="#filter" data-filter=".video">Video</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
             </div>
             
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-9">
                 <div class="row">
-                    <section id="projects">
-                        <ul id="thumbs">
-
+                    <div id="projects">
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 design">
+                            <div class="item-thumbs col-md-4 col-sm-4 design">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="sources/img/work/full/image-01-full.jpg">
                                     <span class="overlay-img"></span>
@@ -178,11 +182,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 design">
+                            <div class="item-thumbs col-md-4 col-sm-4 design">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="sources/img/work/full/image-02-full.jpg">
                                     <span class="overlay-img"></span>
@@ -190,11 +194,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 photography">
+                            <div class="item-thumbs col-md-4 col-sm-4 photography">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="sources/img/work/full/image-03-full.jpg">
                                     <span class="overlay-img"></span>
@@ -202,11 +206,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 video">
+                            <div class="item-thumbs col-md-4 col-sm-4 video">
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                                 <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
                                     <span class="overlay-img"></span>
@@ -214,11 +218,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 photography">
+                            <div class="item-thumbs col-md-4 col-sm-4 photography">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="sources/img/work/full/image-04-full.jpg">
                                     <span class="overlay-img"></span>
@@ -226,11 +230,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 photography">
+                            <div class="item-thumbs col-md-4 col-sm-4 photography">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="sources/img/work/full/image-05-full.jpg">
                                     <span class="overlay-img"></span>
@@ -238,11 +242,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 video">
+                            <div class="item-thumbs col-md-4 col-sm-4 video">
                                 <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                                 <a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
                                     <span class="overlay-img"></span>
@@ -250,11 +254,11 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 design">
+                            <div class="item-thumbs col-md-4 col-sm-4 design">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="sources/img/work/full/image-06-full.jpg">
                                     <span class="overlay-img"></span>
@@ -262,22 +266,21 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="sources/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                            </div>
                             <!-- End Item Project -->
                             
                             <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs col-md-4 design">
+                            <div class="item-thumbs col-md-4 col-sm-4 design">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="sources/img/work/full/image-07-full.jpg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="sources/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
+                                <img src="sources/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing edivt. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                            </div>
                             <!-- End Item Project -->
-                        </ul>
-                    </section>
+                    </div>
                     
                 </div>
             </div>
@@ -401,7 +404,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- Bootstrap -->
 <script src="sources/js/waypoints.js"></script> <!-- WayPoints -->
 <script src="sources/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="sources/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<!-- Images Loaded -->
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<!-- Isotope Filter -->
+<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script src="sources/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="sources/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
 <script src="sources/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
