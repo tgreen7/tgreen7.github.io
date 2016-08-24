@@ -7,6 +7,12 @@ Description: Personal Website and Portfolio of Alessio Atzeni
 Version: 1.0
 */
 
+/* ==================================================
+   Sass imports
+================================================== */
+@import 'variables';
+@import 'shortcodes';
+
 
 /* ==================================================
    Basic Styles
@@ -35,7 +41,7 @@ body{
 
 
 a{
-	color:#DE5E60;
+	color:$primary-color;
 	text-decoration: none;
 	cursor: pointer;
 	
@@ -105,7 +111,7 @@ hr {
 }
 
 .color-text {
-    color: #DE5E60;
+    color: $primary-color;
 }
 
 .through{
@@ -289,95 +295,9 @@ h3.spec {
 }
 
 
-
 /* ==================================================
    Header
 ================================================== */
-
-// header {
-// 	width: 100%;
-// 	z-index: 99;
-// }
-
-// header .sticky-nav {
-// 	position: relative;
-// 	width: 100%;
-// 	height: 60px;
-// 	background: #26292E;
-// 	z-index: 1001;
-	
-// 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-// 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-// 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-// }
-
-// header .sticky-nav.stuck {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	z-index: 1001;
-// }
-
-// header #logo {
-// 	color: #FFFFFF;
-// 	float: left;
-// 	padding: 15px 0;
-// 	margin-left: 20px;
-// }
-
-// header #logo a {
-// 	background: url(../img/logo.png) no-repeat;
-// 	width: 96px;
-// 	height: 30px;
-// 	text-indent: -9999px;
-// 	display: block;
-// 	opacity: 1;
-// 	filter: alpha(opacity=100);
-	
-// 	-webkit-transition: opacity 0.25s ease-in-out 0s;	
-// 	   -moz-transition: opacity 0.25s ease-in-out 0s;
-// 		 -o-transition: opacity 0.25s ease-in-out 0s;
-// 		    transition: opacity 0.25s ease-in-out 0s;	
-// }
-
-// header #logo a:hover {
-// 	opacity: 0.65;
-// 	filter: alpha(opacity=65);	
-// }
-
-// nav#menu {
-// 	float: right;
-// 	margin-right: 20px;
-// }
-
-// nav#menu #menu-nav {
-// 	margin: 0;
-// 	padding: 0;	
-// }
-
-// nav#menu #menu-nav li {
-// 	list-style: none;
-// 	display: inline-block;
-// 	margin-left: 50px;	
-// }
-
-// nav#menu #menu-nav li:first-child {
-// 	margin-left: 0;	
-// }
-
-// nav#menu #menu-nav li a {
-// 	color: #FFFFFF;
-// 	font-size: 16px;
-// 	font-weight: 300;
-// 	line-height: 60px;
-// 	display: block;
-// 	text-transform: uppercase;
-// }
-
-// nav#menu #menu-nav li.current a,
-// nav#menu #menu-nav li a:hover {
-// 	color: #DE5E60;
-// }
 
 .navbar-default {
     background: #26292E;
@@ -392,20 +312,24 @@ h3.spec {
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li.current>a, 
 .navbar-default .navbar-nav>li>a:hover {
-	color: #DE5E60;
+	color: $primary-color;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+	color: white;
 }
 
 .navbar-default a.navbar-brand {
-	color: white;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 500;
 }
 
-.navbar-default a.navbar-brand:hover,
-.navbar-default a.navbar-brand:focus
+.navbar-default a.navbar-brand:hover
 {
-	color: #DE5E60;
+	color: $primary-color;
 }
 
 
@@ -494,16 +418,13 @@ h3.spec {
 }
 
 .work-nav #filters li a.selected {
-	color: #DE5E60;
+	color: $primary-color;
 }
 
 #thumbs {
 	margin: 0;
-	padding: 0;	
-}
-
-#thumbs li {
-	list-style-type: none;
+	padding: 0;
+	width: 100%;
 }
 
 .item-thumbs {
@@ -554,7 +475,7 @@ h3.spec {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: $primary-color;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -590,11 +511,11 @@ h3.spec {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 25px;
-	cursor: pointer;
 }
 
 .image-wrap img {
-	width: 100%;	
+	width: 100%;
+	// width: 70%;	
 }
 
 .image-wrap  .hover-wrap {
@@ -634,7 +555,7 @@ h3.spec {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #DE5E60;
+	background: $primary-color;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -781,7 +702,7 @@ h3.spec {
 }
 
 #contact-form .submit:hover {
-    background: #DE5E60;
+    background: $primary-color;
     color: #FFFFFF;
 }
 
@@ -902,7 +823,7 @@ h3.spec {
 
 #social ul li:hover a,
 #social ul li.active a {
-	background-color: #DE5E60;	
+	background-color: $primary-color;	
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
@@ -967,7 +888,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#DE5E60;
+	background-color:$primary-color;
 }
 
 #back-to-top i {
@@ -1043,7 +964,7 @@ footer .credits {
 	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
-	background: #DE5E60;
+	background: $primary-color;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	border-radius: 999px;
@@ -1190,33 +1111,13 @@ footer .credits {
    Icons Example
 ================================================== */
 
-.contact-icons {
-	float: left;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
 
-.contact-icons ul {
-	margin: 0;
-	padding: 0;
+.contact-icons div a {
 	text-align: center;
-}
-
-.contact-icons ul li {
-	display: block;
-	margin: 15px;
-	list-style: none;
-	cursor: pointer;
-}
-
-.contact-icons ul li a {
-	display: block;
+	display: inline-block;
 	width: 70px;
 	height: 70px;
-
+	
 	background: #26292E;
 	
 	-webkit-transition: all 400ms ease-out 0s;	
@@ -1232,12 +1133,13 @@ footer .credits {
 }
 
 
-.contact-icons ul li a i {
+.contact-icons div a i {
 	display: inline-block;
 	margin: 0;
 	color: #55606a;
 	font-size: 42px;
 	line-height: 70px;
+
 	
 	opacity: 0.3;
 	filter: alpha(opacity=30);
@@ -1254,10 +1156,9 @@ footer .credits {
 			transform: rotateY(0deg);
 }
 
-
-.contact-icons ul li:hover a,
-.contact-icons ul li.active a {
-	background-color: #DE5E60;	
+.contact-icons div:hover a,
+.contact-icons div.active a {
+	background-color: $primary-color;	
 	
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
@@ -1266,8 +1167,8 @@ footer .credits {
 		    transform: rotateY(180deg);
 }
 
-.contact-icons ul li:hover a i,
-.contact-icons ul li.active a i {
+.contact-icons div:hover a i,
+.contact-icons div.active a i {
 	color: #FFFFFF;
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -1285,7 +1186,21 @@ footer .credits {
 ================================================== */
 
 
-#resumePDF {
-    width: 100%;
+.navbar-toggle {
+	border: 0;
 }
+
+.navbar-default .navbar-toggle.collapsed .icon-bar{
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle.collapsed:hover .icon-bar {
+	background-color: $primary-color;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
 

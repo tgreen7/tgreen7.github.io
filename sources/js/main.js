@@ -89,9 +89,6 @@ BRUSHED.fancyBox = function(){
 ================================================== */
 
 BRUSHED.menu = function(){
-    $('.nav a').on('click', function(){
-        $('.navbar-toggle').click();
-    });
     $('#menu-nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
@@ -102,6 +99,13 @@ BRUSHED.menu = function(){
         filter: ':not(.external)'
     });
 }
+
+// collapse mobile nav on link click
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
 
 /* ==================================================
    Next Section
