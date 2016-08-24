@@ -89,7 +89,10 @@ BRUSHED.fancyBox = function(){
 ================================================== */
 
 BRUSHED.menu = function(){
-    $('#menu-nav, #menu-nav-mobile').onePageNav({
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click();
+    });
+    $('#menu-nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,
