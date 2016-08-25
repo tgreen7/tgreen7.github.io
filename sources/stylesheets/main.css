@@ -1330,3 +1330,8 @@ footer .credits {
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
+
+/* line 1206, ../sass/main.scss */
+#projects {
+  transition: height 0.5s;
+}
