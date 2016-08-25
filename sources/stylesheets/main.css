@@ -537,26 +537,18 @@ h3.spec {
 }
 
 /* line 424, ../sass/main.scss */
-#thumbs {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* line 430, ../sass/main.scss */
 .item-thumbs {
-  position: relative;
   overflow: hidden;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-/* line 437, ../sass/main.scss */
+/* line 430, ../sass/main.scss */
 .item-thumbs a + img {
   width: 100%;
 }
 
-/* line 441, ../sass/main.scss */
+/* line 434, ../sass/main.scss */
 .item-thumbs .hover-wrap {
   position: absolute;
   display: block;
@@ -575,7 +567,7 @@ h3.spec {
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 462, ../sass/main.scss */
+/* line 455, ../sass/main.scss */
 .item-thumbs:hover .hover-wrap,
 .item-thumbs.active .hover-wrap {
   opacity: 1;
@@ -587,7 +579,7 @@ h3.spec {
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 474, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .item-thumbs .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -597,7 +589,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
-/* line 484, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 .item-thumbs .hover-wrap .overlay-img-thumb {
   position: absolute;
   top: 50%;
@@ -613,29 +605,29 @@ h3.spec {
 /* ==================================================
    About Section
 ================================================== */
-/* line 502, ../sass/main.scss */
+/* line 495, ../sass/main.scss */
 .profile-name {
   margin-bottom: 15px;
 }
 
-/* line 506, ../sass/main.scss */
+/* line 499, ../sass/main.scss */
 .profile-description {
   margin-bottom: 25px;
 }
 
-/* line 510, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 .image-wrap {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
 }
 
-/* line 516, ../sass/main.scss */
+/* line 509, ../sass/main.scss */
 .image-wrap img {
   width: 100%;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 .image-wrap .hover-wrap {
   position: absolute;
   display: block;
@@ -654,7 +646,7 @@ h3.spec {
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 542, ../sass/main.scss */
+/* line 535, ../sass/main.scss */
 .image-wrap:hover .hover-wrap,
 .image-wrap.active .hover-wrap {
   opacity: 1;
@@ -666,7 +658,7 @@ h3.spec {
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 554, ../sass/main.scss */
+/* line 547, ../sass/main.scss */
 .image-wrap .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -676,7 +668,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
-/* line 564, ../sass/main.scss */
+/* line 557, ../sass/main.scss */
 .image-wrap .hover-wrap .overlay-text-thumb {
   position: absolute;
   width: 100%;
@@ -693,24 +685,24 @@ h3.spec {
   filter: alpha(opacity=100);
 }
 
-/* line 581, ../sass/main.scss */
+/* line 574, ../sass/main.scss */
 .social-icons {
   margin: 0;
   padding: 0;
 }
 
-/* line 586, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .social-icons li {
   display: inline-block;
   margin-left: 15px;
 }
 
-/* line 591, ../sass/main.scss */
+/* line 584, ../sass/main.scss */
 .social-icons li:first-child {
   margin-left: 0;
 }
 
-/* line 595, ../sass/main.scss */
+/* line 588, ../sass/main.scss */
 .social-icons li a {
   color: #FFFFFF;
   font-size: 16px;
@@ -725,7 +717,7 @@ h3.spec {
   transition: opacity 0.1s linear 0s;
 }
 
-/* line 611, ../sass/main.scss */
+/* line 604, ../sass/main.scss */
 .social-icons li a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -734,7 +726,7 @@ h3.spec {
 /* ==================================================
    Contact Section
 ================================================== */
-/* line 620, ../sass/main.scss */
+/* line 613, ../sass/main.scss */
 .contact-details h3 {
   color: #FFFFFF;
   font-size: 24px;
@@ -744,31 +736,31 @@ h3.spec {
   text-transform: uppercase;
 }
 
-/* line 629, ../sass/main.scss */
+/* line 622, ../sass/main.scss */
 .contact-details ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 635, ../sass/main.scss */
+/* line 628, ../sass/main.scss */
 .contact-details ul li {
   margin: 0 0 20px;
   line-height: 28px;
   padding: 0;
 }
 
-/* line 641, ../sass/main.scss */
+/* line 634, ../sass/main.scss */
 #contact-form {
   margin-bottom: 0;
 }
 
-/* line 645, ../sass/main.scss */
+/* line 638, ../sass/main.scss */
 #contact-form p {
   margin-bottom: 1px;
 }
 
-/* line 649, ../sass/main.scss */
+/* line 642, ../sass/main.scss */
 #contact-form input,
 #contact-form textarea {
   border: none;
@@ -787,7 +779,7 @@ h3.spec {
   resize: none;
 }
 
-/* line 670, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 #contact-form input {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -795,7 +787,7 @@ h3.spec {
   box-sizing: border-box;
 }
 
-/* line 677, ../sass/main.scss */
+/* line 670, ../sass/main.scss */
 #contact-form textarea {
   width: 100%;
   resize: vertical;
@@ -804,7 +796,7 @@ h3.spec {
   box-sizing: border-box;
 }
 
-/* line 685, ../sass/main.scss */
+/* line 678, ../sass/main.scss */
 #contact-form .submit {
   background: #3C3F45;
   color: #23262C;
@@ -823,13 +815,13 @@ h3.spec {
   transition: background 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-/* line 704, ../sass/main.scss */
+/* line 697, ../sass/main.scss */
 #contact-form .submit:hover {
   background: #009933;
   color: #FFFFFF;
 }
 
-/* line 709, ../sass/main.scss */
+/* line 702, ../sass/main.scss */
 #response {
   margin-top: 20px;
   color: #FFFFFF;
@@ -838,13 +830,13 @@ h3.spec {
 /* ==================================================
    Twitter Feed
 ================================================== */
-/* line 719, ../sass/main.scss */
+/* line 712, ../sass/main.scss */
 #twitter-feed {
   padding: 100px 0 90px;
   text-align: center;
 }
 
-/* line 724, ../sass/main.scss */
+/* line 717, ../sass/main.scss */
 #twitter-feed .follow {
   position: absolute;
   bottom: 30px;
@@ -853,7 +845,7 @@ h3.spec {
   font-size: 16px;
 }
 
-/* line 732, ../sass/main.scss */
+/* line 725, ../sass/main.scss */
 #ticker .tweet_list {
   margin: 0;
   padding: 0;
@@ -862,7 +854,7 @@ h3.spec {
   overflow-y: hidden;
 }
 
-/* line 740, ../sass/main.scss */
+/* line 733, ../sass/main.scss */
 #ticker .tweet_list li {
   font-size: 18px;
   height: 64px;
@@ -870,7 +862,7 @@ h3.spec {
   overflow: hidden;
 }
 
-/* line 747, ../sass/main.scss */
+/* line 740, ../sass/main.scss */
 #ticker .tweet_list .tweet_time a {
   color: #7f8289;
   font-size: 14px;
@@ -878,7 +870,7 @@ h3.spec {
   margin-left: 10px;
 }
 
-/* line 754, ../sass/main.scss */
+/* line 747, ../sass/main.scss */
 #ticker .tweet_list .tweet_time a:hover {
   color: #FFFFFF;
 }
@@ -886,18 +878,18 @@ h3.spec {
 /* ==================================================
    Social Area
 ================================================== */
-/* line 763, ../sass/main.scss */
+/* line 756, ../sass/main.scss */
 #social-area {
   text-align: center;
 }
 
-/* line 767, ../sass/main.scss */
+/* line 760, ../sass/main.scss */
 #social-area #social ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 772, ../sass/main.scss */
+/* line 765, ../sass/main.scss */
 #social-area #social ul li {
   display: inline-block;
   margin-left: 30px;
@@ -905,12 +897,12 @@ h3.spec {
   cursor: pointer;
 }
 
-/* line 779, ../sass/main.scss */
+/* line 772, ../sass/main.scss */
 #social-area #social ul li:first-child {
   margin-left: 0;
 }
 
-/* line 783, ../sass/main.scss */
+/* line 776, ../sass/main.scss */
 #social ul li a {
   display: block;
   width: 70px;
@@ -927,7 +919,7 @@ h3.spec {
   transform: rotateY(180deg);
 }
 
-/* line 802, ../sass/main.scss */
+/* line 795, ../sass/main.scss */
 #social ul li a span {
   display: inline-block;
   margin: 0;
@@ -947,7 +939,7 @@ h3.spec {
   transform: rotateY(180deg);
 }
 
-/* line 824, ../sass/main.scss */
+/* line 817, ../sass/main.scss */
 #social ul li:hover a,
 #social ul li.active a {
   background-color: #009933;
@@ -958,7 +950,7 @@ h3.spec {
   transform: rotateY(0deg);
 }
 
-/* line 835, ../sass/main.scss */
+/* line 828, ../sass/main.scss */
 #social ul li:hover a span,
 #social ul li.active a span {
   color: #FFFFFF;
@@ -974,7 +966,7 @@ h3.spec {
 /* ==================================================
    Footer
 ================================================== */
-/* line 852, ../sass/main.scss */
+/* line 845, ../sass/main.scss */
 footer {
   position: relative;
   width: 100%;
@@ -984,7 +976,7 @@ footer {
   z-index: 99;
 }
 
-/* line 861, ../sass/main.scss */
+/* line 854, ../sass/main.scss */
 footer .credits {
   color: #FFFFFF;
   font-size: 13px;
@@ -996,7 +988,7 @@ footer .credits {
 /* ==================================================
    Back to Top
 ================================================== */
-/* line 873, ../sass/main.scss */
+/* line 866, ../sass/main.scss */
 #back-to-top {
   display: none;
   background-color: #3C3F45;
@@ -1013,12 +1005,12 @@ footer .credits {
   transition: background 0.1s linear 0s;
 }
 
-/* line 890, ../sass/main.scss */
+/* line 883, ../sass/main.scss */
 #back-to-top:hover {
   background-color: #009933;
 }
 
-/* line 894, ../sass/main.scss */
+/* line 887, ../sass/main.scss */
 #back-to-top i {
   font-size: 16px;
   color: #FFFFFF;
@@ -1029,7 +1021,7 @@ footer .credits {
   line-height: 1em;
 }
 
-/* line 904, ../sass/main.scss */
+/* line 897, ../sass/main.scss */
 #back-to-top i {
   margin-left: -7px;
 }
@@ -1037,7 +1029,7 @@ footer .credits {
 /* ==================================================
    Preloader
 ================================================== */
-/* line 913, ../sass/main.scss */
+/* line 906, ../sass/main.scss */
 #jpreOverlay,
 #jSplash {
   background-color: #2F3238;
@@ -1047,7 +1039,7 @@ footer .credits {
   z-index: 700;
 }
 
-/* line 922, ../sass/main.scss */
+/* line 915, ../sass/main.scss */
 #jpreSlide {
   position: absolute;
   top: 50% !important;
@@ -1057,7 +1049,7 @@ footer .credits {
   height: 100px;
 }
 
-/* line 931, ../sass/main.scss */
+/* line 924, ../sass/main.scss */
 #jpreLoader {
   position: relative !important;
   width: 100% !important;
@@ -1065,7 +1057,7 @@ footer .credits {
   top: 0 !important;
 }
 
-/* line 938, ../sass/main.scss */
+/* line 931, ../sass/main.scss */
 #jprePercentage {
   width: 50px;
   height: 50px !important;
@@ -1085,7 +1077,7 @@ footer .credits {
   animation: circle 1s infinite forwards;
 }
 
-/* line 959, ../sass/main.scss */
+/* line 952, ../sass/main.scss */
 #circle {
   position: absolute;
   top: 50%;
@@ -1179,19 +1171,19 @@ footer .credits {
    Isotope Filtering
 ================================================== */
 /**** Isotope Filtering ****/
-/* line 1046, ../sass/main.scss */
+/* line 1039, ../sass/main.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 1050, ../sass/main.scss */
+/* line 1043, ../sass/main.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 1057, ../sass/main.scss */
+/* line 1050, ../sass/main.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -1201,7 +1193,7 @@ footer .credits {
   transition-duration: 0.8s;
 }
 
-/* line 1066, ../sass/main.scss */
+/* line 1059, ../sass/main.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -1210,7 +1202,7 @@ footer .credits {
   transition-property: height, width;
 }
 
-/* line 1074, ../sass/main.scss */
+/* line 1067, ../sass/main.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1220,7 +1212,7 @@ footer .credits {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 1084, ../sass/main.scss */
+/* line 1077, ../sass/main.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -1233,7 +1225,7 @@ footer .credits {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 1099, ../sass/main.scss */
+/* line 1092, ../sass/main.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -1245,7 +1237,7 @@ footer .credits {
 /* ==================================================
    Icons Example
 ================================================== */
-/* line 1115, ../sass/main.scss */
+/* line 1108, ../sass/main.scss */
 .contact-icons div a {
   text-align: center;
   display: inline-block;
@@ -1263,7 +1255,7 @@ footer .credits {
   transform: rotateY(0deg);
 }
 
-/* line 1136, ../sass/main.scss */
+/* line 1129, ../sass/main.scss */
 .contact-icons div a i {
   display: inline-block;
   margin: 0;
@@ -1283,7 +1275,7 @@ footer .credits {
   transform: rotateY(0deg);
 }
 
-/* line 1159, ../sass/main.scss */
+/* line 1152, ../sass/main.scss */
 .contact-icons div:hover a,
 .contact-icons div.active a {
   background-color: #009933;
@@ -1294,7 +1286,7 @@ footer .credits {
   transform: rotateY(180deg);
 }
 
-/* line 1170, ../sass/main.scss */
+/* line 1163, ../sass/main.scss */
 .contact-icons div:hover a i,
 .contact-icons div.active a i {
   color: #FFFFFF;
@@ -1310,28 +1302,28 @@ footer .credits {
 /* ==================================================
    additions
 ================================================== */
-/* line 1189, ../sass/main.scss */
+/* line 1182, ../sass/main.scss */
 .navbar-toggle {
   border: 0;
 }
 
-/* line 1193, ../sass/main.scss */
+/* line 1186, ../sass/main.scss */
 .navbar-default .navbar-toggle.collapsed .icon-bar {
   background-color: white;
 }
 
-/* line 1197, ../sass/main.scss */
+/* line 1190, ../sass/main.scss */
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
   background-color: #009933;
 }
 
-/* line 1201, ../sass/main.scss */
+/* line 1194, ../sass/main.scss */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
-/* line 1206, ../sass/main.scss */
+/* line 1199, ../sass/main.scss */
 #projects {
   transition: height 0.5s;
 }
