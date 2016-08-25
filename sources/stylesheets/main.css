@@ -10,9 +10,6 @@ Version: 1.0
    Sass imports
 ================================================== */
 /* ==================================================
-   colors
-================================================== */
-/* ==================================================
    Buttons
 ================================================== */
 /* line 5, ../sass/_shortcodes.scss */
@@ -83,12 +80,12 @@ Version: 1.0
 /* ==================================================
    Basic Styles
 ================================================== */
-/* line 21, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 html, hmtl a {
   width: 100%;
   font-size: 100%;
@@ -96,7 +93,7 @@ html, hmtl a {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 body {
   background: #2F3238;
   color: #7F8289;
@@ -107,7 +104,7 @@ body {
   padding-top: 70px;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 a {
   color: #009933;
   text-decoration: none;
@@ -118,7 +115,7 @@ a {
   transition: color 0.1s linear 0s;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 a:hover,
 a:active,
 a:focus {
@@ -127,32 +124,32 @@ a:focus {
   text-decoration: none;
 }
 
-/* line 62, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 a img {
   border: none;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 a > img {
   vertical-align: bottom;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 img {
   max-width: none;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 strong {
   font-weight: 500;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 p {
   margin: 0 0 30px;
 }
 
-/* line 82, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 hr {
   border-style: dashed;
   border-color: #3C3F45;
@@ -162,70 +159,70 @@ hr {
   margin: 50px 0;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .align_left {
   float: left;
   margin: 0 25px 0 0px !important;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .align_right {
   float: right;
   margin: 0 0 0 25px !important;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .text_align_left {
   text-align: left;
 }
 
-/* line 105, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .text_align_center {
   text-align: center;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .text_align_right {
   text-align: right;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .color-text {
   color: #009933;
 }
 
-/* line 117, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .through {
   text-decoration: line-through;
 }
 
-/* line 121, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 input, button, select, textarea {
   font-weight: 300;
   font-family: 'Titillium Web', sans-serif;
   outline: 0;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 input:focus,
 textarea:focus,
 input[type="text"]:focus {
   outline: 0;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #7F8289;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #7F8289;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #7F8289;
@@ -234,19 +231,21 @@ textarea::-webkit-input-placeholder {
 /* ==================================================
    Code and Pre
 ================================================== */
-/* line 152, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 code,
 pre {
   padding: 0 3px 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
   color: #232527;
   font-size: 12px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-/* line 163, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 code {
   padding: 2px 4px;
   border: 1px solid #dde4e9;
@@ -255,7 +254,7 @@ code {
   white-space: nowrap;
 }
 
-/* line 171, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 pre {
   display: block;
   margin: 70px 50px;
@@ -264,6 +263,8 @@ pre {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
   background-color: #FCFCFC;
   white-space: pre;
   white-space: pre-wrap;
@@ -273,7 +274,7 @@ pre {
   line-height: 20px;
 }
 
-/* line 188, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 pre code {
   padding: 0;
   border: 0;
@@ -283,7 +284,7 @@ pre code {
   white-space: pre-wrap;
 }
 
-/* line 197, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .pre-scrollable {
   overflow-y: scroll;
   max-height: 340px;
@@ -292,7 +293,7 @@ pre code {
 /* ==================================================
    Typography
 ================================================== */
-/* line 206, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 h1,
 h2,
 h3,
@@ -306,37 +307,37 @@ h6 {
   line-height: 1.5em;
 }
 
-/* line 219, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 h1 {
   font-size: 48px;
 }
 
-/* line 223, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 h2 {
   font-size: 36px;
 }
 
-/* line 227, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 h4 {
   font-size: 20px;
 }
 
-/* line 235, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 239, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 h6 {
   font-size: 16px;
 }
 
-/* line 243, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 h3.spec {
   color: #FFFFFF;
   font-size: 24px;
@@ -349,52 +350,52 @@ h3.spec {
 /* ==================================================
    Margin Bottom Sets
 ================================================== */
-/* line 257, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .margin-0 {
   margin-bottom: 0 !important;
 }
 
-/* line 261, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .margin-10 {
   margin-bottom: 10px !important;
 }
 
-/* line 265, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .margin-15 {
   margin-bottom: 15px !important;
 }
 
-/* line 269, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 .margin-20 {
   margin-bottom: 20px !important;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 .margin-30 {
   margin-bottom: 30px !important;
 }
 
-/* line 277, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .margin-40 {
   margin-bottom: 40px !important;
 }
 
-/* line 281, ../sass/main.scss */
+/* line 278, ../sass/main.scss */
 .margin-50 {
   margin-bottom: 50px !important;
 }
 
-/* line 285, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .margin-60 {
   margin-bottom: 60px !important;
 }
 
-/* line 289, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .margin-70 {
   margin-bottom: 70px !important;
 }
 
-/* line 293, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .margin-80 {
   margin-bottom: 80px !important;
 }
@@ -402,7 +403,7 @@ h3.spec {
 /* ==================================================
    Header
 ================================================== */
-/* line 302, ../sass/main.scss */
+/* line 299, ../sass/main.scss */
 .navbar-default {
   background: #26292E;
   border: 0;
@@ -413,33 +414,33 @@ h3.spec {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 312, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li.current > a,
 .navbar-default .navbar-nav > li > a:hover {
   color: #009933;
 }
 
-/* line 318, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
   color: white;
 }
 
-/* line 324, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 .navbar-default a.navbar-brand {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
 }
 
-/* line 330, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 .navbar-default a.navbar-brand:hover {
   color: #009933;
 }
 
-/* line 336, ../sass/main.scss */
+/* line 331, ../sass/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
   font-size: 16px;
@@ -449,7 +450,7 @@ h3.spec {
   text-transform: uppercase;
 }
 
-/* line 345, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .navbar-default .navbar-nav > li {
   padding-left: 15px;
   padding-right: 15px;
@@ -458,7 +459,7 @@ h3.spec {
 /* ==================================================
    Section Page
 ================================================== */
-/* line 356, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 .page {
   background: #2F3238;
   padding: 100px 0;
@@ -466,7 +467,7 @@ h3.spec {
   z-index: 99;
 }
 
-/* line 363, ../sass/main.scss */
+/* line 358, ../sass/main.scss */
 .page-alternate {
   background: #26292E;
   padding: 100px 0;
@@ -474,19 +475,19 @@ h3.spec {
   z-index: 99;
 }
 
-/* line 370, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .title-page {
   text-align: center;
   margin-bottom: 100px;
 }
 
-/* line 375, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .title-page .title {
   font-size: 48px;
   margin: 0 0 10px 0;
 }
 
-/* line 380, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 .title-page .title-description {
   font-size: 24px;
   font-weight: 200;
@@ -496,7 +497,7 @@ h3.spec {
 /* ==================================================
    Section Portfolio
 ================================================== */
-/* line 390, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 .type-work {
   color: #FFFFFF;
   font-size: 24px;
@@ -506,49 +507,49 @@ h3.spec {
   text-transform: uppercase;
 }
 
-/* line 399, ../sass/main.scss */
+/* line 394, ../sass/main.scss */
 .work-nav #filters {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 405, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 .work-nav #filters li {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
-/* line 410, ../sass/main.scss */
+/* line 405, ../sass/main.scss */
 .work-nav #filters li a {
   color: #7F8289;
   font-size: 16px;
   display: block;
 }
 
-/* line 416, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .work-nav #filters li a:hover {
   color: #FFFFFF;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 415, ../sass/main.scss */
 .work-nav #filters li a.selected {
   color: #009933;
 }
 
-/* line 424, ../sass/main.scss */
+/* line 419, ../sass/main.scss */
 .item-thumbs {
   overflow: hidden;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-/* line 430, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 .item-thumbs a + img {
   width: 100%;
 }
 
-/* line 434, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 .item-thumbs .hover-wrap {
   position: absolute;
   display: block;
@@ -567,7 +568,7 @@ h3.spec {
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 455, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 .item-thumbs:hover .hover-wrap,
 .item-thumbs.active .hover-wrap {
   opacity: 1;
@@ -579,7 +580,7 @@ h3.spec {
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 467, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 .item-thumbs .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -589,7 +590,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
-/* line 477, ../sass/main.scss */
+/* line 472, ../sass/main.scss */
 .item-thumbs .hover-wrap .overlay-img-thumb {
   position: absolute;
   top: 50%;
@@ -605,29 +606,29 @@ h3.spec {
 /* ==================================================
    About Section
 ================================================== */
-/* line 495, ../sass/main.scss */
+/* line 490, ../sass/main.scss */
 .profile-name {
   margin-bottom: 15px;
 }
 
-/* line 499, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 .profile-description {
   margin-bottom: 25px;
 }
 
-/* line 503, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .image-wrap {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
 }
 
-/* line 509, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
 .image-wrap img {
   width: 100%;
 }
 
-/* line 514, ../sass/main.scss */
+/* line 509, ../sass/main.scss */
 .image-wrap .hover-wrap {
   position: absolute;
   display: block;
@@ -646,7 +647,7 @@ h3.spec {
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 535, ../sass/main.scss */
+/* line 530, ../sass/main.scss */
 .image-wrap:hover .hover-wrap,
 .image-wrap.active .hover-wrap {
   opacity: 1;
@@ -658,7 +659,7 @@ h3.spec {
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 547, ../sass/main.scss */
+/* line 542, ../sass/main.scss */
 .image-wrap .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -668,7 +669,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
-/* line 557, ../sass/main.scss */
+/* line 552, ../sass/main.scss */
 .image-wrap .hover-wrap .overlay-text-thumb {
   position: absolute;
   width: 100%;
@@ -685,24 +686,24 @@ h3.spec {
   filter: alpha(opacity=100);
 }
 
-/* line 574, ../sass/main.scss */
+/* line 569, ../sass/main.scss */
 .social-icons {
   margin: 0;
   padding: 0;
 }
 
-/* line 579, ../sass/main.scss */
+/* line 574, ../sass/main.scss */
 .social-icons li {
   display: inline-block;
   margin-left: 15px;
 }
 
-/* line 584, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .social-icons li:first-child {
   margin-left: 0;
 }
 
-/* line 588, ../sass/main.scss */
+/* line 583, ../sass/main.scss */
 .social-icons li a {
   color: #FFFFFF;
   font-size: 16px;
@@ -717,7 +718,7 @@ h3.spec {
   transition: opacity 0.1s linear 0s;
 }
 
-/* line 604, ../sass/main.scss */
+/* line 599, ../sass/main.scss */
 .social-icons li a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -726,7 +727,7 @@ h3.spec {
 /* ==================================================
    Contact Section
 ================================================== */
-/* line 613, ../sass/main.scss */
+/* line 608, ../sass/main.scss */
 .contact-details h3 {
   color: #FFFFFF;
   font-size: 24px;
@@ -736,37 +737,39 @@ h3.spec {
   text-transform: uppercase;
 }
 
-/* line 622, ../sass/main.scss */
+/* line 617, ../sass/main.scss */
 .contact-details ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 628, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 .contact-details ul li {
   margin: 0 0 20px;
   line-height: 28px;
   padding: 0;
 }
 
-/* line 634, ../sass/main.scss */
+/* line 629, ../sass/main.scss */
 #contact-form {
   margin-bottom: 0;
 }
 
-/* line 638, ../sass/main.scss */
+/* line 633, ../sass/main.scss */
 #contact-form p {
   margin-bottom: 1px;
 }
 
-/* line 642, ../sass/main.scss */
+/* line 637, ../sass/main.scss */
 #contact-form input,
 #contact-form textarea {
   border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -779,7 +782,7 @@ h3.spec {
   resize: none;
 }
 
-/* line 663, ../sass/main.scss */
+/* line 656, ../sass/main.scss */
 #contact-form input {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -787,7 +790,7 @@ h3.spec {
   box-sizing: border-box;
 }
 
-/* line 670, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 #contact-form textarea {
   width: 100%;
   resize: vertical;
@@ -796,7 +799,7 @@ h3.spec {
   box-sizing: border-box;
 }
 
-/* line 678, ../sass/main.scss */
+/* line 671, ../sass/main.scss */
 #contact-form .submit {
   background: #3C3F45;
   color: #23262C;
@@ -815,13 +818,13 @@ h3.spec {
   transition: background 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-/* line 697, ../sass/main.scss */
+/* line 690, ../sass/main.scss */
 #contact-form .submit:hover {
   background: #009933;
   color: #FFFFFF;
 }
 
-/* line 702, ../sass/main.scss */
+/* line 695, ../sass/main.scss */
 #response {
   margin-top: 20px;
   color: #FFFFFF;
@@ -830,13 +833,13 @@ h3.spec {
 /* ==================================================
    Twitter Feed
 ================================================== */
-/* line 712, ../sass/main.scss */
+/* line 705, ../sass/main.scss */
 #twitter-feed {
   padding: 100px 0 90px;
   text-align: center;
 }
 
-/* line 717, ../sass/main.scss */
+/* line 710, ../sass/main.scss */
 #twitter-feed .follow {
   position: absolute;
   bottom: 30px;
@@ -845,7 +848,7 @@ h3.spec {
   font-size: 16px;
 }
 
-/* line 725, ../sass/main.scss */
+/* line 718, ../sass/main.scss */
 #ticker .tweet_list {
   margin: 0;
   padding: 0;
@@ -854,7 +857,7 @@ h3.spec {
   overflow-y: hidden;
 }
 
-/* line 733, ../sass/main.scss */
+/* line 726, ../sass/main.scss */
 #ticker .tweet_list li {
   font-size: 18px;
   height: 64px;
@@ -862,7 +865,7 @@ h3.spec {
   overflow: hidden;
 }
 
-/* line 740, ../sass/main.scss */
+/* line 733, ../sass/main.scss */
 #ticker .tweet_list .tweet_time a {
   color: #7f8289;
   font-size: 14px;
@@ -870,7 +873,7 @@ h3.spec {
   margin-left: 10px;
 }
 
-/* line 747, ../sass/main.scss */
+/* line 740, ../sass/main.scss */
 #ticker .tweet_list .tweet_time a:hover {
   color: #FFFFFF;
 }
@@ -878,18 +881,18 @@ h3.spec {
 /* ==================================================
    Social Area
 ================================================== */
-/* line 756, ../sass/main.scss */
+/* line 749, ../sass/main.scss */
 #social-area {
   text-align: center;
 }
 
-/* line 760, ../sass/main.scss */
+/* line 753, ../sass/main.scss */
 #social-area #social ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 765, ../sass/main.scss */
+/* line 758, ../sass/main.scss */
 #social-area #social ul li {
   display: inline-block;
   margin-left: 30px;
@@ -897,12 +900,12 @@ h3.spec {
   cursor: pointer;
 }
 
-/* line 772, ../sass/main.scss */
+/* line 765, ../sass/main.scss */
 #social-area #social ul li:first-child {
   margin-left: 0;
 }
 
-/* line 776, ../sass/main.scss */
+/* line 769, ../sass/main.scss */
 #social ul li a {
   display: block;
   width: 70px;
@@ -919,7 +922,7 @@ h3.spec {
   transform: rotateY(180deg);
 }
 
-/* line 795, ../sass/main.scss */
+/* line 788, ../sass/main.scss */
 #social ul li a span {
   display: inline-block;
   margin: 0;
@@ -939,7 +942,7 @@ h3.spec {
   transform: rotateY(180deg);
 }
 
-/* line 817, ../sass/main.scss */
+/* line 810, ../sass/main.scss */
 #social ul li:hover a,
 #social ul li.active a {
   background-color: #009933;
@@ -950,7 +953,7 @@ h3.spec {
   transform: rotateY(0deg);
 }
 
-/* line 828, ../sass/main.scss */
+/* line 821, ../sass/main.scss */
 #social ul li:hover a span,
 #social ul li.active a span {
   color: #FFFFFF;
@@ -966,7 +969,7 @@ h3.spec {
 /* ==================================================
    Footer
 ================================================== */
-/* line 845, ../sass/main.scss */
+/* line 838, ../sass/main.scss */
 footer {
   position: relative;
   width: 100%;
@@ -976,7 +979,7 @@ footer {
   z-index: 99;
 }
 
-/* line 854, ../sass/main.scss */
+/* line 847, ../sass/main.scss */
 footer .credits {
   color: #FFFFFF;
   font-size: 13px;
@@ -988,7 +991,7 @@ footer .credits {
 /* ==================================================
    Back to Top
 ================================================== */
-/* line 866, ../sass/main.scss */
+/* line 859, ../sass/main.scss */
 #back-to-top {
   display: none;
   background-color: #3C3F45;
@@ -1005,12 +1008,12 @@ footer .credits {
   transition: background 0.1s linear 0s;
 }
 
-/* line 883, ../sass/main.scss */
+/* line 876, ../sass/main.scss */
 #back-to-top:hover {
   background-color: #009933;
 }
 
-/* line 887, ../sass/main.scss */
+/* line 880, ../sass/main.scss */
 #back-to-top i {
   font-size: 16px;
   color: #FFFFFF;
@@ -1021,7 +1024,7 @@ footer .credits {
   line-height: 1em;
 }
 
-/* line 897, ../sass/main.scss */
+/* line 890, ../sass/main.scss */
 #back-to-top i {
   margin-left: -7px;
 }
@@ -1029,7 +1032,7 @@ footer .credits {
 /* ==================================================
    Preloader
 ================================================== */
-/* line 906, ../sass/main.scss */
+/* line 899, ../sass/main.scss */
 #jpreOverlay,
 #jSplash {
   background-color: #2F3238;
@@ -1039,7 +1042,7 @@ footer .credits {
   z-index: 700;
 }
 
-/* line 915, ../sass/main.scss */
+/* line 908, ../sass/main.scss */
 #jpreSlide {
   position: absolute;
   top: 50% !important;
@@ -1049,7 +1052,7 @@ footer .credits {
   height: 100px;
 }
 
-/* line 924, ../sass/main.scss */
+/* line 917, ../sass/main.scss */
 #jpreLoader {
   position: relative !important;
   width: 100% !important;
@@ -1057,7 +1060,7 @@ footer .credits {
   top: 0 !important;
 }
 
-/* line 931, ../sass/main.scss */
+/* line 924, ../sass/main.scss */
 #jprePercentage {
   width: 50px;
   height: 50px !important;
@@ -1077,7 +1080,7 @@ footer .credits {
   animation: circle 1s infinite forwards;
 }
 
-/* line 952, ../sass/main.scss */
+/* line 945, ../sass/main.scss */
 #circle {
   position: absolute;
   top: 50%;
@@ -1171,29 +1174,29 @@ footer .credits {
    Isotope Filtering
 ================================================== */
 /**** Isotope Filtering ****/
-/* line 1039, ../sass/main.scss */
+/* line 1032, ../sass/main.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 1043, ../sass/main.scss */
+/* line 1036, ../sass/main.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 1050, ../sass/main.scss */
+/* line 1043, ../sass/main.scss */
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
 
-/* line 1059, ../sass/main.scss */
+/* line 1052, ../sass/main.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -1202,7 +1205,7 @@ footer .credits {
   transition-property: height, width;
 }
 
-/* line 1067, ../sass/main.scss */
+/* line 1060, ../sass/main.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -1212,7 +1215,7 @@ footer .credits {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 1077, ../sass/main.scss */
+/* line 1070, ../sass/main.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -1225,7 +1228,7 @@ footer .credits {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 1092, ../sass/main.scss */
+/* line 1085, ../sass/main.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -1237,7 +1240,12 @@ footer .credits {
 /* ==================================================
    Icons Example
 ================================================== */
-/* line 1108, ../sass/main.scss */
+/* line 1100, ../sass/main.scss */
+.contact-icons > div {
+  margin-bottom: 20px;
+}
+
+/* line 1104, ../sass/main.scss */
 .contact-icons div a {
   text-align: center;
   display: inline-block;
@@ -1255,7 +1263,7 @@ footer .credits {
   transform: rotateY(0deg);
 }
 
-/* line 1129, ../sass/main.scss */
+/* line 1125, ../sass/main.scss */
 .contact-icons div a i {
   display: inline-block;
   margin: 0;
@@ -1275,7 +1283,7 @@ footer .credits {
   transform: rotateY(0deg);
 }
 
-/* line 1152, ../sass/main.scss */
+/* line 1148, ../sass/main.scss */
 .contact-icons div:hover a,
 .contact-icons div.active a {
   background-color: #009933;
@@ -1286,7 +1294,7 @@ footer .credits {
   transform: rotateY(180deg);
 }
 
-/* line 1163, ../sass/main.scss */
+/* line 1159, ../sass/main.scss */
 .contact-icons div:hover a i,
 .contact-icons div.active a i {
   color: #FFFFFF;
@@ -1302,28 +1310,28 @@ footer .credits {
 /* ==================================================
    additions
 ================================================== */
-/* line 1182, ../sass/main.scss */
+/* line 1178, ../sass/main.scss */
 .navbar-toggle {
   border: 0;
 }
 
-/* line 1186, ../sass/main.scss */
+/* line 1182, ../sass/main.scss */
 .navbar-default .navbar-toggle.collapsed .icon-bar {
   background-color: white;
 }
 
-/* line 1190, ../sass/main.scss */
+/* line 1186, ../sass/main.scss */
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
   background-color: #009933;
 }
 
-/* line 1194, ../sass/main.scss */
+/* line 1190, ../sass/main.scss */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
-/* line 1199, ../sass/main.scss */
+/* line 1196, ../sass/main.scss */
 #projects {
-  transition: height 0.5s;
+  transition: height 0.7s;
 }

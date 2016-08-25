@@ -11,6 +11,7 @@ Version: 1.0
    Sass imports
 ================================================== */
 @import 'variables';
+@import 'mixins';
 @import 'shortcodes';
 
 
@@ -152,9 +153,7 @@ textarea::-webkit-input-placeholder {
 code,
 pre {
   	padding: 0 3px 2px;
-  	-webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+  	@include border-radius(3px);
   	color: #232527;
   	font-size: 12px;
   	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -173,9 +172,7 @@ pre {
   	margin: 70px 50px;
   	padding: 30px;
   	border: 1px solid #dde4e9;
-  	-webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+  	@include border-radius(4px);
   	background-color: #FCFCFC;
   	white-space: pre;
   	white-space: pre-wrap;
@@ -304,9 +301,7 @@ h3.spec {
     border: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    @include box-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.25));
 }
 
 .navbar-default .navbar-nav>li>a:focus,
@@ -642,9 +637,7 @@ h3.spec {
 #contact-form input,
 #contact-form textarea {
     border: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-    border-radius: 0;
+    @include border-radius(0);
 	
     -webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -1035,7 +1028,7 @@ footer .credits {
 ================================================== */
 
 /**** Isotope Filtering ****/
-
+ 
 .isotope-item {
   z-index: 2;
 }
@@ -1049,11 +1042,11 @@ footer .credits {
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  -webkit-transition-duration: $isotopeDuration;
+     -moz-transition-duration: $isotopeDuration;
+      -ms-transition-duration: $isotopeDuration;
+       -o-transition-duration: $isotopeDuration;
+          transition-duration: $isotopeDuration;
 }
 
 .isotope {
@@ -1104,6 +1097,9 @@ footer .credits {
    Icons Example
 ================================================== */
 
+.contact-icons > div {
+	margin-bottom: 20px;
+}
 
 .contact-icons div a {
 	text-align: center;
@@ -1178,7 +1174,7 @@ footer .credits {
    additions
 ================================================== */
 
-
+// navbar styling 
 .navbar-toggle {
 	border: 0;
 }
@@ -1196,6 +1192,8 @@ footer .credits {
 	background-color: transparent;
 }
 
+// makes isotope height change not jump immediately
 #projects {
-	transition: height 0.5s;
+	transition: height $isotopeDuration;
 }
+

@@ -25,7 +25,8 @@ BRUSHED.filter = function (){
             container.isotope({
                 itemSelector: '.item-thumbs',
                 layoutMode: 'fitRows',
-                animationEngine: 'best-available'
+                animationEngine: 'best-available',
+                transitionDuration: '0.7s'
             });
         })
 
