@@ -3,14 +3,6 @@ jQuery(function($){
 var BRUSHED = window.BRUSHED || {};
 
 
-/* ==================================================
-   Navigation Fix
-================================================== */
-
-BRUSHED.nav = function(){
-    $('.sticky-nav').waypoint('sticky');
-}
-
 
 /* ==================================================
    Filter Works
@@ -18,7 +10,6 @@ BRUSHED.nav = function(){
 
 BRUSHED.filter = function (){
     if($('#projects').length > 0) {  
-
         var container = $('#projects');
 
         container.imagesLoaded( function() {
@@ -260,7 +251,6 @@ $(document).ready(function(){
         }
     });
     
-    BRUSHED.nav();
     BRUSHED.menu();
     BRUSHED.goSection();
     BRUSHED.goUp();
