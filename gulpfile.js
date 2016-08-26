@@ -7,7 +7,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
-var notify = require('gulp-notify');
+var gutil = require('gulp-util');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
 
@@ -20,7 +20,11 @@ gulp.task('styles', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'))
-        .pipe(notify({ message: 'Styles task complete' }));
+        // live reload
+        .pipe(livereload())
+        .on('end', function () {
+            gutil.log(gutil.colors.green('Styles task complete!'));
+        });
 });
 
 // Concatenate & Minify JS
@@ -36,22 +40,31 @@ gulp.task('scripts', function() {
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
-        .pipe(notify({ message: 'Scripts task complete' }));
+        .on('end', function () {
+            gutil.log(gutil.colors.green('Scripts task complete!'));
+        });
+});
+
+// Watches html and reloads
+gulp.task('html', function() {
+    return gulp.src([
+            './**/*.html',
+            '!./node_modules/**/*'
+        ])
+        .pipe(livereload());
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    //  // Watch .scss files
+    livereload.listen();
+    
+    // Watch .scss files
     gulp.watch('src/scss/**/*.scss', ['styles']);
     // Watch .js files
     gulp.watch('src/js/**/*.js', ['scripts']);
 
-    // Create LiveReload server
-    livereload.listen();
-
-    // Watch any files in dist/, reload on change
-    gulp.watch(['dist/**']).on('change', livereload.changed);
-
+    // Watch HTML and livereload
+    gulp.watch('./**/*.html', ['html']);
 });
 
 // Clean
