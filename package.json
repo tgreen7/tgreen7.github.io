@@ -2,7 +2,6 @@
   "name": "tgreen7",
   "version": "1.0.0",
   "description": "My website",
-  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/tgreen7/tgreen7.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/tgreen7/tgreen7.github.io/issues"
   },
