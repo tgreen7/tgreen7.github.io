@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
+        .pipe(livereload())
         .on('end', function () {
             gutil.log(gutil.colors.green('Scripts task complete!'));
         });
@@ -51,7 +52,10 @@ gulp.task('html', function() {
             './**/*.html',
             '!./node_modules/**/*'
         ])
-        .pipe(livereload());
+        .pipe(livereload())
+        .on('end', function () {
+            gutil.log(gutil.colors.green('HTML task complete!'));
+        });
 });
 
 // Watch Files For Changes

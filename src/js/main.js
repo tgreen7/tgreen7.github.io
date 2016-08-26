@@ -231,6 +231,13 @@ BRUSHED.toolTip = function(){
     $('a[data-toggle=tooltip]').tooltip();
 }
 
+/* ==================================================
+   Tooltip
+================================================== */
+
+BRUSHED.hoverWrap = function () {
+    $('.hover-wrap').width($('.projectImages').width());
+}
 
 /* ==================================================
     Init
@@ -251,6 +258,7 @@ $(document).ready(function(){
         }
     });
     
+    BRUSHED.hoverWrap();
     BRUSHED.menu();
     BRUSHED.goSection();
     BRUSHED.goUp();
@@ -262,6 +270,10 @@ $(document).ready(function(){
     BRUSHED.toggle();
     BRUSHED.toolTip();
 
+});
+
+$(window).resize(function(){
+    BRUSHED.hoverWrap();
 });
 
 
