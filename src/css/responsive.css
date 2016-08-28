@@ -205,62 +205,6 @@
 		display: none;	
 	}
 	
-	header .sticky-nav {
-		position: relative;	
-	}
-	
-	// header .sticky-nav,
-	// #navigation-mobile,
-	// .page,
-	// .page-alternate,
-	// #twitter-feed,
-	// footer {
-	// 	margin-left: -20px;
-	// 	margin-right: -20px;
-	// 	padding-left: 20px;
-	// 	padding-right: 20px;	
-	// }
-	
-	header .sticky-nav #logo {
-		margin-left: 0;
-	}
-	
-	header .sticky-nav.stuck #logo {
-		margin-left: 20px;	
-	}
-	
-	header .sticky-nav #menu {
-		margin-right: 0;
-	}
-	
-	header .sticky-nav.stuck #menu {
-		margin-right: 20px;	
-	}
-	
-	#menu {
-		display: none;	
-	}
-	
-	#mobile-nav {
-    	display: block;
-		float: right;
-	}
-	
-	#menu-nav-mobile {
-		margin-left: -20px;
-		margin-right: -20px;
-		margin-bottom: 0;
-	}
-	
-	#navigation-mobile li a {
-		font-size: 14px;
-		padding: 12px 0;
-	}
-	
-	header .sticky-nav.stuck #mobile-nav {
-		margin-right: 20px;	
-	}
-	
 	.work-nav {
 		margin-bottom: 30px;	
 	}
@@ -402,11 +346,6 @@
 			background-image: url(../img/menu-mobile_@2x.png);
 			background-size: 16px 32px;
 		}
-		
-		// .type-work {
-		// 	background-image: url(../img/filter-icon_@2x.png);
-		// 	background-size: 16px 16px;
-		// }
 	}
 
 

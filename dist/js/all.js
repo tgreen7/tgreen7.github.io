@@ -358,7 +358,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 BRUSHED.goSection = function(){
     $('#nextsection').on('click', function(){
         $target = $($(this).attr('href')).offset().top-30;
-        
         $('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
         return false;
     });
@@ -371,7 +370,8 @@ BRUSHED.goSection = function(){
 BRUSHED.goUp = function(){
     $('#goUp').on('click', function(){
         $target = $($(this).attr('href')).offset().top-30;
-        
+        debugger
+        console.log('hi');
         $('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
         return false;
     });
