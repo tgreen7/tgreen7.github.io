@@ -35,7 +35,7 @@ Version: 1.0
 .button:hover,
 .button:active,
 .button:focus {
-  background-color: #009912;
+  background-color: #228115;
   color: #FFFFFF;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 a {
-  color: #009912;
+  color: #228115;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.1s linear 0s;
@@ -156,7 +156,7 @@ hr {
 }
 
 .color-text {
-  color: #009912;
+  color: #228115;
 }
 
 .through {
@@ -349,7 +349,7 @@ h3.spec {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li.current > a,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #009912;
+  color: #228115;
 }
 
 .navbar-default .navbar-brand,
@@ -365,7 +365,7 @@ h3.spec {
 }
 
 .navbar-default a.navbar-brand:hover {
-  color: #009912;
+  color: #228115;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -449,7 +449,7 @@ h3.spec {
 }
 
 .work-nav #filters li a.selected {
-  color: #009912;
+  color: #228115;
 }
 
 .item-thumbs {
@@ -483,7 +483,7 @@ h3.spec {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #009912;
+  background: #228115;
   opacity: 0.80;
   filter: alpha(opacity=80);
 }
@@ -543,7 +543,7 @@ h3.spec {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #009912;
+  background: #228115;
   opacity: 0.80;
   filter: alpha(opacity=80);
 }
@@ -669,7 +669,7 @@ h3.spec {
 }
 
 #contact-form .submit:hover {
-  background: #009912;
+  background: #228115;
   color: #FFFFFF;
 }
 
@@ -766,7 +766,7 @@ h3.spec {
 
 #social ul li:hover a,
 #social ul li.active a {
-  background-color: #009912;
+  background-color: #228115;
   transform: rotateY(0deg);
 }
 
@@ -815,7 +815,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-  background-color: #009912;
+  background-color: #228115;
 }
 
 #back-to-top i {
@@ -883,7 +883,7 @@ footer .credits {
   margin: -50px 0 0 -50px;
   width: 100px;
   height: 100px;
-  background: #009912;
+  background: #228115;
   border-radius: 999px;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -976,7 +976,7 @@ footer .credits {
 
 .contact-icons div:hover a,
 .contact-icons div.active a {
-  background-color: #009912;
+  background-color: #228115;
   transform: rotateY(180deg);
 }
 
@@ -1000,7 +1000,7 @@ footer .credits {
 }
 
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
-  background-color: #009912;
+  background-color: #228115;
 }
 
 .navbar-default .navbar-toggle:focus,
