@@ -1196,3 +1196,14 @@ footer .credits {
 	transition: height $isotopeDuration;
 }
 
+.floatIcon {
+	float: right;
+}
+
+.floatIcon > i {
+	color: white;
+}
+
+.floatIcon:hover > i {
+	color: $primary-color;
+}

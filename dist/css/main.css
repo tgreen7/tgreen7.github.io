@@ -1011,3 +1011,15 @@ footer .credits {
 #projects {
   transition: height 0.7s;
 }
+
+.floatIcon {
+  float: right;
+}
+
+.floatIcon > i {
+  color: white;
+}
+
+.floatIcon:hover > i {
+  color: #228115;
+}

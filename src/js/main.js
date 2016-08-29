@@ -57,8 +57,15 @@ BRUSHED.fancyBox = function(){
         $(".fancybox").fancybox({               
                 padding : 0,
                 beforeShow: function () {
+                    var githubLink = '';
+                    if($(this.element).attr('github')) {
+                        githubLink = "<a class='floatIcon' target='_blank' href='" + $(this.element).attr('github') + "'><i class='fa fa-github fa-2x' aria-hidden='true'></i></a>";
+                    }
                     this.title = $(this.element).attr('title');
-                    this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+                    this.title = '<h4>' + this.title  
+                        + githubLink
+                        + '</h4>' 
+                        + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
                 },
                 helpers : {
                     title : { type: 'inside' },
@@ -269,6 +276,28 @@ $(document).ready(function(){
     BRUSHED.accordion();
     BRUSHED.toggle();
     BRUSHED.toolTip();
+
+
+    // $(".fancybox")
+    //     .attr('rel', 'gallery')
+    //     .fancybox({
+    //         beforeShow: function () {
+    //             if (this.title) {
+    //                 // New line
+    //                 // this.title += '<br />';
+                    
+    //                 // Add tweet button
+    //                 // this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
+                    
+    //             }
+    //         },
+    //         helpers : {
+    //             title : {
+    //                 type: 'inside'
+    //             }
+    //         }  
+    //     });
+
 
 });
 
