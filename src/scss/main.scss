@@ -32,7 +32,7 @@ html, hmtl a{
 
 body{
 	background:#2F3238;
-	color:#7F8289;
+	color: $text-color;
 	font-weight:300;
 	font-size:16px;
 	font-family: 'Titillium Web', sans-serif;
@@ -99,18 +99,6 @@ hr {
 	margin:0 0 0 25px!important;
 }
 
-.text_align_left {
-	text-align: left;
-}
-
-.text_align_center {
-	text-align: center;
-}
-
-.text_align_right {
-	text-align: right;	
-}
-
 .color-text {
     color: $primary-color;
 }
@@ -133,17 +121,17 @@ input[type="text"]:focus {
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #7F8289;
+  color: $text-color;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #7F8289;
+  color: $text-color;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #7F8289;
+  color: $text-color;
 }
 
 /* ==================================================
@@ -403,7 +391,7 @@ h3.spec {
 }
 
 .work-nav #filters li a {
-	color: #7F8289;
+	color: $text-color;
 	font-size: 16px;
 	display: block;	
 }
@@ -730,7 +718,7 @@ h3.spec {
 }
 
 #ticker .tweet_list .tweet_time a {
-	color: #7f8289;
+	color: $text-color;
 	font-size: 14px;
 	font-style: italic;
 	margin-left: 10px;	
@@ -1206,4 +1194,9 @@ footer .credits {
 
 .floatIcon:hover > i {
 	color: $primary-color;
+}
+
+// override fancybox skin color 
+.fancybox-skin {
+	color: $text-color;
 }
