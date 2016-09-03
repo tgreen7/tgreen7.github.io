@@ -20,14 +20,20 @@ var plumber = require('gulp-plumber');
 gulp.task('styles', function() {
     return gulp.src('src/scss/**/*.scss')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(autoprefixer('last 2 version'))
+        // sourcemaps triggers full reload
+        // .pipe(sourcemaps.init())
+        .pipe(sass(
+            {
+                outputStyle: 'expanded', 
+                sourceComments: true,
+            }
+        ).on('error', sass.logError))
+        .pipe(autoprefixer('last 5 versions'))
         .pipe(gulp.dest('dist/css'))
         // minify
         .pipe(rename({suffix: '.min'}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write('maps'))
+        // .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('dist/css'))
         // live reload
         .pipe(livereload())

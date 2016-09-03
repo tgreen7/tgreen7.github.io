@@ -1,17 +1,264 @@
-/*
-Theme Name: Brushed 
-Theme URI: http://www.themes.alessioatzeni.com/html/brushed/
-Author: Alessio Atzeni
-Author URI: http://www.alessioatzeni.com
-Description: Personal Website and Portfolio of Alessio Atzeni
-Version: 1.0
-*/
 /* ==================================================
-   Sass imports
+   Imports
 ================================================== */
+/* ==================================================
+   Mixins
+================================================== */
+/* ==================================================
+   Extends
+================================================== */
+/* ==================================================
+   Basic Styles
+================================================== */
+/* line 5, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+html, hmtl a {
+  width: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 16, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+body {
+  background: #2F3238;
+  color: #CCCCCC;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 28px;
+  padding-top: 70px;
+}
+
+/* line 27, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+a {
+  color: #228115;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.1s linear 0s;
+}
+
+/* line 38, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 46, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+a img {
+  border: none;
+}
+
+/* line 50, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+a > img {
+  vertical-align: bottom;
+}
+
+/* line 54, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+img {
+  max-width: none;
+}
+
+/* line 58, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+strong {
+  font-weight: 500;
+}
+
+/* line 62, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+p {
+  margin: 0 0 30px;
+}
+
+/* line 66, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+hr {
+  border-style: dashed;
+  border-color: #3C3F45;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin: 50px 0;
+}
+
+/* line 75, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+.align_left {
+  float: left;
+  margin: 0 25px 0 0px !important;
+}
+
+/* line 80, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+.align_right {
+  float: right;
+  margin: 0 0 0 25px !important;
+}
+
+/* line 85, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+.color-text {
+  color: #228115;
+}
+
+/* line 89, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+.through {
+  text-decoration: line-through;
+}
+
+/* line 93, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+input, button, select, textarea {
+  font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+  outline: 0;
+}
+
+/* line 99, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+input:focus,
+textarea:focus,
+input[type="text"]:focus {
+  outline: 0;
+}
+
+/* line 105, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #CCCCCC;
+}
+
+/* line 110, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+/* line 115, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+/* ==================================================
+   Code and Pre
+================================================== */
+/* line 124, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+code,
+pre {
+  padding: 0 3px 2px;
+  border-radius: 3px;
+  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
+  color: #232527;
+  font-size: 12px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+/* line 133, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+code {
+  padding: 2px 4px;
+  border: 1px solid #dde4e9;
+  background-color: #F6F6F6;
+  color: #232527;
+  white-space: nowrap;
+}
+
+/* line 141, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+pre {
+  display: block;
+  margin: 70px 50px;
+  padding: 30px;
+  border: 1px solid #dde4e9;
+  border-radius: 4px;
+  /* stops bg color from leaking outside the border: */
+  background-clip: padding-box;
+  background-color: #FCFCFC;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 156, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+pre code {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
+/* line 165, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+.pre-scrollable {
+  overflow-y: scroll;
+  max-height: 340px;
+}
+
+/* ==================================================
+   Typography
+================================================== */
+/* line 6, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.5em;
+}
+
+/* line 19, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 23, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h2 {
+  font-size: 36px;
+}
+
+/* line 27, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 31, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 35, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 39, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 43, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+h3.spec {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 /* ==================================================
    Buttons
 ================================================== */
+/* line 5, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -32,6 +279,7 @@ Version: 1.0
 }
 
 /*--- Hover/Active/Focus State ---*/
+/* line 32, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button:hover,
 .button:active,
 .button:focus {
@@ -40,292 +288,40 @@ Version: 1.0
 }
 
 /* --- Button Sizes --- */
+/* line 41, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button.button-large {
   padding: 16px 30px;
   font-size: 18px;
 }
 
+/* line 46, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button.button-small {
   padding: 8px 18px;
   font-size: 14px;
 }
 
+/* line 51, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button.button-mini {
   padding: 4px 12px;
   font-size: 12px;
 }
 
+/* line 56, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button.button-block {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
 }
 
+/* line 62, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
 .button + .button {
   margin-left: 10px;
 }
 
 /* ==================================================
-   Basic Styles
-================================================== */
-html, body {
-  height: 100%;
-}
-
-html, hmtl a {
-  width: 100%;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  background: #2F3238;
-  color: #CCCCCC;
-  font-weight: 300;
-  font-size: 16px;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 28px;
-  padding-top: 70px;
-}
-
-a {
-  color: #228115;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.1s linear 0s;
-}
-
-a:hover,
-a:active,
-a:focus {
-  outline: 0;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-a img {
-  border: none;
-}
-
-a > img {
-  vertical-align: bottom;
-}
-
-img {
-  max-width: none;
-}
-
-strong {
-  font-weight: 500;
-}
-
-p {
-  margin: 0 0 30px;
-}
-
-hr {
-  border-style: dashed;
-  border-color: #3C3F45;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  margin: 50px 0;
-}
-
-.align_left {
-  float: left;
-  margin: 0 25px 0 0px !important;
-}
-
-.align_right {
-  float: right;
-  margin: 0 0 0 25px !important;
-}
-
-.color-text {
-  color: #228115;
-}
-
-.through {
-  text-decoration: line-through;
-}
-
-input, button, select, textarea {
-  font-weight: 300;
-  font-family: 'Titillium Web', sans-serif;
-  outline: 0;
-}
-
-input:focus,
-textarea:focus,
-input[type="text"]:focus {
-  outline: 0;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #CCCCCC;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #CCCCCC;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #CCCCCC;
-}
-
-/* ==================================================
-   Code and Pre
-================================================== */
-code,
-pre {
-  padding: 0 3px 2px;
-  border-radius: 3px;
-  /* stops bg color from leaking outside the border: */
-  background-clip: padding-box;
-  color: #232527;
-  font-size: 12px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-}
-
-code {
-  padding: 2px 4px;
-  border: 1px solid #dde4e9;
-  background-color: #F6F6F6;
-  color: #232527;
-  white-space: nowrap;
-}
-
-pre {
-  display: block;
-  margin: 70px 50px;
-  padding: 30px;
-  border: 1px solid #dde4e9;
-  border-radius: 4px;
-  /* stops bg color from leaking outside the border: */
-  background-clip: padding-box;
-  background-color: #FCFCFC;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-all;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-pre code {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  color: inherit;
-  white-space: pre;
-  white-space: pre-wrap;
-}
-
-.pre-scrollable {
-  overflow-y: scroll;
-  max-height: 340px;
-}
-
-/* ==================================================
-   Typography
-================================================== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 20px 0;
-  color: #FFFFFF;
-  font-weight: 300;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 1.5em;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-h3.spec {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1em;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-/* ==================================================
-   Margin Bottom Sets
-================================================== */
-.margin-0 {
-  margin-bottom: 0 !important;
-}
-
-.margin-10 {
-  margin-bottom: 10px !important;
-}
-
-.margin-15 {
-  margin-bottom: 15px !important;
-}
-
-.margin-20 {
-  margin-bottom: 20px !important;
-}
-
-.margin-30 {
-  margin-bottom: 30px !important;
-}
-
-.margin-40 {
-  margin-bottom: 40px !important;
-}
-
-.margin-50 {
-  margin-bottom: 50px !important;
-}
-
-.margin-60 {
-  margin-bottom: 60px !important;
-}
-
-.margin-70 {
-  margin-bottom: 70px !important;
-}
-
-.margin-80 {
-  margin-bottom: 80px !important;
-}
-
-/* ==================================================
    Header
 ================================================== */
+/* line 17, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default {
   background: #26292E;
   border: 0;
@@ -334,28 +330,33 @@ h3.spec {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
+/* line 25, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li.current > a,
 .navbar-default .navbar-nav > li > a:hover {
   color: #228115;
 }
 
+/* line 31, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
   color: white;
 }
 
+/* line 37, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default a.navbar-brand {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
 }
 
+/* line 43, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default a.navbar-brand:hover {
   color: #228115;
 }
 
+/* line 49, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
   font-size: 16px;
@@ -365,6 +366,7 @@ h3.spec {
   text-transform: uppercase;
 }
 
+/* line 58, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-nav > li {
   padding-left: 15px;
   padding-right: 15px;
@@ -373,6 +375,7 @@ h3.spec {
 /* ==================================================
    Section Page
 ================================================== */
+/* line 67, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .page {
   background: #2F3238;
   padding: 100px 0;
@@ -380,6 +383,7 @@ h3.spec {
   z-index: 99;
 }
 
+/* line 74, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .page-alternate {
   background: #26292E;
   padding: 100px 0;
@@ -387,16 +391,19 @@ h3.spec {
   z-index: 99;
 }
 
+/* line 81, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .title-page {
   text-align: center;
   margin-bottom: 100px;
 }
 
+/* line 86, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .title-page .title {
   font-size: 48px;
   margin: 0 0 10px 0;
 }
 
+/* line 91, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .title-page .title-description {
   font-size: 24px;
   font-weight: 200;
@@ -406,6 +413,7 @@ h3.spec {
 /* ==================================================
    Section Portfolio
 ================================================== */
+/* line 101, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .type-work {
   color: #FFFFFF;
   font-size: 24px;
@@ -415,41 +423,49 @@ h3.spec {
   text-transform: uppercase;
 }
 
+/* line 110, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .work-nav #filters {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* line 116, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .work-nav #filters li {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
+/* line 121, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .work-nav #filters li a {
   color: #CCCCCC;
   font-size: 16px;
   display: block;
 }
 
+/* line 126, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .work-nav #filters li a:hover {
   color: #FFFFFF;
 }
 
+/* line 131, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .work-nav #filters li a.selected {
   color: #228115;
 }
 
+/* line 135, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs {
   overflow: hidden;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
+/* line 141, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs a + img {
   width: 100%;
 }
 
+/* line 145, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs .hover-wrap {
   position: absolute;
   display: block;
@@ -457,16 +473,22 @@ h3.spec {
   opacity: 0;
   filter: alpha(opacity=0);
   transition: all 450ms ease-out 0s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  -ms-transform: rotateY(180deg) scale(0.5, 0.5);
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
+/* line 165, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs:hover .hover-wrap,
 .item-thumbs.active .hover-wrap {
   opacity: 1;
   filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  -ms-transform: rotateY(0deg) scale(1, 1);
   transform: rotateY(0deg) scale(1, 1);
 }
 
+/* line 177, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -476,6 +498,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
+/* line 187, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .item-thumbs .hover-wrap .overlay-img-thumb {
   position: absolute;
   top: 50%;
@@ -491,24 +514,29 @@ h3.spec {
 /* ==================================================
    About Section
 ================================================== */
+/* line 205, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .profile-name {
   margin-bottom: 15px;
 }
 
+/* line 209, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .profile-description {
   margin-bottom: 25px;
 }
 
+/* line 213, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
 }
 
+/* line 219, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap img {
   width: 100%;
 }
 
+/* line 224, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap .hover-wrap {
   position: absolute;
   display: block;
@@ -517,16 +545,22 @@ h3.spec {
   opacity: 0;
   filter: alpha(opacity=0);
   transition: all 450ms ease-out 0s;
+  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+  -ms-transform: rotateY(180deg) scale(0.5, 0.5);
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
+/* line 245, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap:hover .hover-wrap,
 .image-wrap.active .hover-wrap {
   opacity: 1;
   filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  -ms-transform: rotateY(0deg) scale(1, 1);
   transform: rotateY(0deg) scale(1, 1);
 }
 
+/* line 257, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -536,6 +570,7 @@ h3.spec {
   filter: alpha(opacity=80);
 }
 
+/* line 267, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .image-wrap .hover-wrap .overlay-text-thumb {
   position: absolute;
   width: 100%;
@@ -552,223 +587,10 @@ h3.spec {
   filter: alpha(opacity=100);
 }
 
-.social-icons {
-  margin: 0;
-  padding: 0;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.social-icons li:first-child {
-  margin-left: 0;
-}
-
-.social-icons li a {
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 1em;
-  width: 16px;
-  height: 16px;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-  transition: opacity 0.1s linear 0s;
-}
-
-.social-icons li a:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-/* ==================================================
-   Contact Section
-================================================== */
-.contact-details h3 {
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 30px;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-
-.contact-details ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-details ul li {
-  margin: 0 0 20px;
-  line-height: 28px;
-  padding: 0;
-}
-
-#contact-form {
-  margin-bottom: 0;
-}
-
-#contact-form p {
-  margin-bottom: 1px;
-}
-
-#contact-form input,
-#contact-form textarea {
-  border: none;
-  border-radius: 0;
-  /* stops bg color from leaking outside the border: */
-  background-clip: padding-box;
-  box-shadow: none;
-  background: #26292E;
-  color: #FFFFFF;
-  font-size: 16px;
-  height: auto;
-  padding: 15px;
-  margin: 0;
-  resize: none;
-}
-
-#contact-form input {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#contact-form textarea {
-  width: 100%;
-  resize: vertical;
-  box-sizing: border-box;
-}
-
-#contact-form .submit {
-  background: #3C3F45;
-  color: #23262C;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 16px 40px;
-  text-align: center;
-  vertical-align: middle;
-  width: auto;
-  margin-top: 30px;
-  transition: background 0.1s linear 0s, color 0.1s linear 0s;
-}
-
-#contact-form .submit:hover {
-  background: #228115;
-  color: #FFFFFF;
-}
-
-#response {
-  margin-top: 20px;
-  color: #FFFFFF;
-}
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-#twitter-feed {
-  padding: 100px 0 90px;
-  text-align: center;
-}
-
-#twitter-feed .follow {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -8px;
-  font-size: 16px;
-}
-
-#ticker .tweet_list {
-  margin: 0;
-  padding: 0;
-  height: 64px;
-  list-style: none;
-  overflow-y: hidden;
-}
-
-#ticker .tweet_list li {
-  font-size: 18px;
-  height: 64px;
-  line-height: 28px;
-  overflow: hidden;
-}
-
-#ticker .tweet_list .tweet_time a {
-  color: #CCCCCC;
-  font-size: 14px;
-  font-style: italic;
-  margin-left: 10px;
-}
-
-#ticker .tweet_list .tweet_time a:hover {
-  color: #FFFFFF;
-}
-
-/* ==================================================
-   Social Area
-================================================== */
-#social-area {
-  text-align: center;
-}
-
-#social-area #social ul {
-  margin: 0;
-  padding: 0;
-}
-
-#social-area #social ul li {
-  display: inline-block;
-  margin-left: 30px;
-  list-style: none;
-  cursor: pointer;
-}
-
-#social-area #social ul li:first-child {
-  margin-left: 0;
-}
-
-#social ul li a {
-  display: block;
-  width: 70px;
-  height: 70px;
-  background: #26292E;
-  transition: all 400ms ease-out 0s;
-  transform: rotateY(180deg);
-}
-
-#social ul li a span {
-  display: inline-block;
-  margin: 0;
-  color: #55606a;
-  font-size: 32px;
-  line-height: 70px;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-  transition: all 400ms ease-out 0s;
-  transform: rotateY(180deg);
-}
-
-#social ul li:hover a,
-#social ul li.active a {
-  background-color: #228115;
-  transform: rotateY(0deg);
-}
-
-#social ul li:hover a span,
-#social ul li.active a span {
-  color: #FFFFFF;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  transform: rotateY(0deg);
-}
-
 /* ==================================================
    Footer
 ================================================== */
+/* line 288, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 footer {
   position: relative;
   width: 100%;
@@ -778,6 +600,7 @@ footer {
   z-index: 99;
 }
 
+/* line 297, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 footer .credits {
   color: #FFFFFF;
   font-size: 13px;
@@ -789,6 +612,7 @@ footer .credits {
 /* ==================================================
    Back to Top
 ================================================== */
+/* line 309, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top {
   display: none;
   background-color: #3C3F45;
@@ -802,10 +626,12 @@ footer .credits {
   transition: background 0.1s linear 0s;
 }
 
+/* line 326, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top:hover {
   background-color: #228115;
 }
 
+/* line 330, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top i {
   font-size: 16px;
   color: #FFFFFF;
@@ -816,6 +642,7 @@ footer .credits {
   line-height: 1em;
 }
 
+/* line 340, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top i {
   margin-left: -7px;
 }
@@ -823,6 +650,7 @@ footer .credits {
 /* ==================================================
    Preloader
 ================================================== */
+/* line 349, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreOverlay,
 #jSplash {
   background-color: #2F3238;
@@ -832,6 +660,7 @@ footer .credits {
   z-index: 700;
 }
 
+/* line 358, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreSlide {
   position: absolute;
   top: 50% !important;
@@ -841,6 +670,7 @@ footer .credits {
   height: 100px;
 }
 
+/* line 367, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreLoader {
   position: relative !important;
   width: 100% !important;
@@ -848,6 +678,7 @@ footer .credits {
   top: 0 !important;
 }
 
+/* line 374, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jprePercentage {
   width: 50px;
   height: 50px !important;
@@ -860,9 +691,11 @@ footer .credits {
   z-index: 800;
   font-size: 24px;
   color: #FFFFFF;
-  animation: circle 1s infinite forwards;
+  -webkit-animation: circle 1s infinite forwards;
+          animation: circle 1s infinite forwards;
 }
 
+/* line 391, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #circle {
   position: absolute;
   top: 50%;
@@ -875,21 +708,49 @@ footer .credits {
   border-radius: 999px;
   opacity: 0;
   filter: alpha(opacity=0);
-  animation: circle 1s infinite forwards;
+  -webkit-animation: circle 1s infinite forwards;
+          animation: circle 1s infinite forwards;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
 }
 
 @keyframes circle {
   0% {
-    transform: rotateY(0deg);
-    animation-timing-function: ease-in;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
   50% {
-    transform: rotateY(180deg);
-    animation-timing-function: ease-out;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   100% {
-    transform: rotateY(0deg);
-    animation-timing-function: ease-in;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
   }
 }
 
@@ -897,30 +758,38 @@ footer .credits {
    Isotope Filtering
 ================================================== */
 /**** Isotope Filtering ****/
+/* line 426, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope-item {
   z-index: 2;
 }
 
+/* line 430, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
+/* line 437, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope,
 .isotope .isotope-item {
   transition-duration: 0.7s;
 }
 
+/* line 442, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope {
   transition-property: height, width;
 }
 
+/* line 446, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope .isotope-item {
+  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
+/* line 452, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -929,6 +798,7 @@ footer .credits {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
+/* line 463, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope.infinite-scrolling {
   transition: none;
 }
@@ -936,10 +806,12 @@ footer .credits {
 /* ==================================================
    Icons Example
 ================================================== */
+/* line 474, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons > div {
   margin-bottom: 20px;
 }
 
+/* line 478, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div a {
   text-align: center;
   display: inline-block;
@@ -947,9 +819,11 @@ footer .credits {
   height: 70px;
   background: #26292E;
   transition: all 400ms ease-out 0s;
-  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
+/* line 492, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div a i {
   display: inline-block;
   margin: 0;
@@ -959,59 +833,58 @@ footer .credits {
   opacity: 0.3;
   filter: alpha(opacity=30);
   transition: all 400ms ease-out 0s;
-  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
+/* line 508, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div:hover a,
 .contact-icons div.active a {
   background-color: #228115;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
+/* line 515, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div:hover a i,
 .contact-icons div.active a i {
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 /* ==================================================
    additions
 ================================================== */
+/* line 530, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-toggle {
   border: 0;
 }
 
+/* line 534, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed .icon-bar {
   background-color: white;
 }
 
+/* line 538, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
   background-color: #228115;
 }
 
+/* line 542, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
+/* line 548, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #projects {
   transition: height 0.7s;
 }
 
-.floatIcon {
-  float: right;
-}
-
-.floatIcon > i {
-  color: white;
-}
-
-.floatIcon:hover > i {
-  color: #228115;
-}
-
+/* line 553, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .fancybox-skin {
   color: #CCCCCC;
 }

@@ -1,284 +1,14 @@
-/*
-Theme Name: Brushed 
-Theme URI: http://www.themes.alessioatzeni.com/html/brushed/
-Author: Alessio Atzeni
-Author URI: http://www.alessioatzeni.com
-Description: Personal Website and Portfolio of Alessio Atzeni
-Version: 1.0
-*/
 
 /* ==================================================
-   Sass imports
+   Imports
 ================================================== */
+
 @import 'variables';
 @import 'mixins';
+@import 'extends';
+@import 'basics';
+@import 'typography';
 @import 'shortcodes';
-
-
-/* ==================================================
-   Basic Styles
-================================================== */
-
-html, body {
-	height: 100%;
-}
-
-html, hmtl a{
-	width:100%;
-	font-size: 100%; 
-	-webkit-text-size-adjust: 100%; 
-	-ms-text-size-adjust: 100%;
-}
-
-body{
-	background:#2F3238;
-	color: $text-color;
-	font-weight:300;
-	font-size:16px;
-	font-family: 'Titillium Web', sans-serif;
-	line-height:28px;
-	padding-top: 70px; 
-}
-
-
-a{
-	color:$primary-color;
-	text-decoration: none;
-	cursor: pointer;
-	
-	-webkit-transition: color 0.1s linear 0s;	
-	   -moz-transition: color 0.1s linear 0s;
-		 -o-transition: color 0.1s linear 0s;
-		    transition: color 0.1s linear 0s;
-}
-
-a:hover,
-a:active,
-a:focus{
-	outline: 0;
-	color:#FFFFFF;
-	text-decoration:none;
-}
-
-a img {
-	border: none;
-}
-
-a > img {
-	vertical-align: bottom;	
-}
-
-img {
-	max-width: none;	
-}
-
-strong {
-  	font-weight: 500;
-}
-
-p {
-	margin: 0 0 30px;
-}
-
-hr {
-	border-style: dashed;
-	border-color: #3C3F45;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	margin: 50px 0;	
-}
-
-.align_left{
-	float:left;
-	margin:0 25px 0 0px!important;
-}
-
-.align_right{
-	float:right;
-	margin:0 0 0 25px!important;
-}
-
-.color-text {
-    color: $primary-color;
-}
-
-.through{
-	text-decoration:line-through;
-}
-
-input, button, select, textarea {
-	font-weight: 300;
-	font-family: 'Titillium Web', sans-serif;
-	outline: 0;
-}
-
-input:focus, 
-textarea:focus,
-input[type="text"]:focus {
-	outline: 0;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: $text-color;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: $text-color;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: $text-color;
-}
-
-/* ==================================================
-   Code and Pre
-================================================== */
-
-code,
-pre {
-  	padding: 0 3px 2px;
-  	@include border-radius(3px);
-  	color: #232527;
-  	font-size: 12px;
-  	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-}
-
-code {
-  	padding: 2px 4px;
-  	border: 1px solid #dde4e9;
-  	background-color: #F6F6F6;
-  	color: #232527;
-  	white-space: nowrap;
-}
-
-pre {
-  	display: block;
-  	margin: 70px 50px;
-  	padding: 30px;
-  	border: 1px solid #dde4e9;
-  	@include border-radius(4px);
-  	background-color: #FCFCFC;
-  	white-space: pre;
-  	white-space: pre-wrap;
-  	word-wrap: break-word;
-  	word-break: break-all;
-  	font-size: 12px;
-  	line-height: 20px;
-}
-
-pre code {
-  	padding: 0;
-  	border: 0;
-  	background-color: transparent;
-  	color: inherit;
-  	white-space: pre;
-  	white-space: pre-wrap;
-}
-
-.pre-scrollable {
-  	overflow-y: scroll;
-  	max-height: 340px;
-}
-
-/* ==================================================
-   Typography
-================================================== */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-	margin:0 0 20px 0;
-	color:#FFFFFF;
-	font-weight:300;
-	font-family: 'Titillium Web', sans-serif;
-	line-height:1.5em;
-}
-
-h1{
-	font-size:48px;
-}
-
-h2{
-	font-size:36px;
-}
-
-h3{
-	font-size:24px;
-}
-
-h4{
-	font-size:20px;
-}
-
-h5{
-	font-size:18px;
-}
-
-h6{
-	font-size:16px;
-}
-
-h3.spec {
-	color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1em;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-
-
-/* ==================================================
-   Margin Bottom Sets
-================================================== */
-
-.margin-0{
-	margin-bottom:0 !important;
-}
-
-.margin-10{
-	margin-bottom:10px !important;
-}
-
-.margin-15{
-	margin-bottom:15px !important;
-}
-
-.margin-20{
-	margin-bottom:20px !important;
-}
-
-.margin-30{
-	margin-bottom:30px !important;
-}
-
-.margin-40{
-	margin-bottom:40px !important;
-}
-
-.margin-50{
-	margin-bottom:50px !important;
-}
-
-.margin-60{
-	margin-bottom:60px !important;
-}
-
-.margin-70{
-	margin-bottom:70px !important;
-}
-
-.margin-80{
-	margin-bottom:80px !important;
-}
-
 
 /* ==================================================
    Header
@@ -329,8 +59,6 @@ h3.spec {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
-
 
 /* ==================================================
    Section Page
@@ -394,10 +122,10 @@ h3.spec {
 	color: $text-color;
 	font-size: 16px;
 	display: block;	
-}
 
-.work-nav #filters li a:hover {
-	color: #FFFFFF;
+	&:hover {
+		color: #FFFFFF;
+	}
 }
 
 .work-nav #filters li a.selected {
@@ -553,271 +281,6 @@ h3.spec {
 	filter: alpha(opacity=100);
 }
 
-.social-icons {
-	margin: 0;
-	padding: 0;
-}
-
-.social-icons li {
-	display: inline-block;
-	margin-left: 15px;	
-}
-
-.social-icons li:first-child {
-	margin-left: 0;
-}
-
-.social-icons li a{
-	color: #FFFFFF;
-	font-size: 16px;
-	line-height: 1em;
-	width: 16px;
-	height: 16px;
-	
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-	
-	-webkit-transition: opacity 0.1s linear 0s;	
-	   -moz-transition: opacity 0.1s linear 0s;
-		 -o-transition: opacity 0.1s linear 0s;
-		    transition: opacity 0.1s linear 0s;
-}
-
-.social-icons li a:hover{
-	opacity: 1;
-	filter: alpha(opacity=100);
-}
-
-/* ==================================================
-   Contact Section
-================================================== */
-
-.contact-details h3 {
-	color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 30px;
-	line-height: 1em;
-    text-transform: uppercase;
-}
-
-.contact-details ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;	
-}
-
-.contact-details ul li {
-	margin: 0 0 20px;
-	line-height: 28px;
-	padding: 0;	
-}
-
-#contact-form {
-	margin-bottom: 0;	
-}
-
-#contact-form p {
-	margin-bottom: 1px;	
-}
-
-#contact-form input,
-#contact-form textarea {
-    border: none;
-    @include border-radius(0);
-	
-    -webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	
-	background: #26292E;
-    color: #FFFFFF;
-    font-size: 16px;
-    height: auto;
-    padding: 15px;
-	margin: 0;
-	
-    resize: none;
-}
-
-#contact-form input {
-    width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#contact-form textarea {
-    width: 100%;
-	resize: vertical;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#contact-form .submit {
-    background: #3C3F45;
-    color: #23262C;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 16px 40px;
-    text-align: center;
-    vertical-align: middle;
-    width: auto;
-	margin-top: 30px;
-	
-	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;	
-	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
-}
-
-#contact-form .submit:hover {
-    background: $primary-color;
-    color: #FFFFFF;
-}
-
-#response {
-	margin-top: 20px;
-	color: #FFFFFF;
-}
-
-
-/* ==================================================
-   Twitter Feed
-================================================== */
-
-#twitter-feed {
-	padding: 100px 0 90px;
-	text-align: center;	
-}
-
-#twitter-feed .follow {
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -8px;
-	font-size: 16px;	
-}
-
-#ticker .tweet_list {
-	margin: 0;
-	padding: 0;
-	height: 64px;
-	list-style: none;
-	overflow-y: hidden;	
-}
-
-#ticker .tweet_list li {
-	font-size: 18px;
-	height: 64px;
-	line-height: 28px;
-	overflow: hidden;
-}
-
-#ticker .tweet_list .tweet_time a {
-	color: $text-color;
-	font-size: 14px;
-	font-style: italic;
-	margin-left: 10px;	
-}
-
-#ticker .tweet_list .tweet_time a:hover {
-	color: #FFFFFF;	
-}
-
-
-/* ==================================================
-   Social Area
-================================================== */
-
-#social-area {
-    text-align: center;
-}
-
-#social-area #social ul {
-	margin: 0;
-	padding: 0;
-}
-
-#social-area #social ul li {
-	display: inline-block;
-	margin-left: 30px;
-	list-style: none;
-	cursor: pointer;
-}
-
-#social-area #social ul li:first-child {
-	margin-left: 0;
-}
-
-#social ul li a {
-	display: block;
-	width: 70px;
-	height: 70px;
-
-	background: #26292E;
-	
-	-webkit-transition: all 400ms ease-out 0s;	
-	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-		    transition: all 400ms ease-out 0s;
-	
-	-webkit-transform: rotateY(180deg);
-	   -moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		 -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-}
-
-#social ul li a span {
-	display: inline-block;
-	margin: 0;
-	color: #55606a;
-	font-size: 32px;
-	line-height: 70px;
-	
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-	
-	-webkit-transition: all 400ms ease-out 0s;	
-	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-		    transition: all 400ms ease-out 0s;
-		  
-	-webkit-transform: rotateY(180deg);
-	   -moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		 -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-}
-
-#social ul li:hover a,
-#social ul li.active a {
-	background-color: $primary-color;	
-	
-	-webkit-transform: rotateY(0deg);
-	   -moz-transform: rotateY(0deg);
-		-ms-transform: rotateY(0deg);
-		 -o-transform: rotateY(0deg);
-		    transform: rotateY(0deg);
-}
-
-#social ul li:hover a span,
-#social ul li.active a span {
-	color: #FFFFFF;
-	opacity: 1;
-	filter: alpha(opacity=100);
-	
-	-webkit-transform: rotateY(0deg);
-	   -moz-transform: rotateY(0deg);
-		-ms-transform: rotateY(0deg);
-		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);
-}
-
 /* ==================================================
    Footer
 ================================================== */
@@ -922,11 +385,7 @@ footer .credits {
 	font-size: 24px;
 	color: #FFFFFF;	
 
-	-webkit-animation: circle 1s infinite forwards;
-	   -moz-animation: circle 1s infinite forwards;
-		-ms-animation: circle 1s infinite forwards;
-		 -o-animation: circle 1s infinite forwards;
-			animation: circle 1s infinite forwards;
+	animation: circle 1s infinite forwards;
 }
 
 #circle {
@@ -938,63 +397,11 @@ footer .credits {
 	width: 100px;
 	height: 100px;
 	background: $primary-color;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
 	border-radius: 999px;
 	opacity: 0;
 	filter: alpha(opacity=0);
 			
-	-webkit-animation: circle 1s infinite forwards;
-	   -moz-animation: circle 1s infinite forwards;
-		-ms-animation: circle 1s infinite forwards;
-			animation: circle 1s infinite forwards;
-}
-
-@-webkit-keyframes circle {
-	0% {-webkit-transform: rotateY(0deg);
-		-webkit-animation-timing-function: ease-in;
-	}
-	50% {-webkit-transform: rotateY(180deg);
-		-webkit-animation-timing-function: ease-out;
-	}
-	100% {-webkit-transform: rotateY(0deg);
-		-webkit-animation-timing-function: ease-in;
-	}
-}
-
-@-moz-keyframes circle {
-	0% {-moz-transform: rotateY(0deg);
-	}
-	50% {-moz-transform: rotateY(180deg);
-		-moz-animation-timing-function: ease-out;
-	}
-	100% {-moz-transform: rotateY(0deg);
-		-moz-animation-timing-function: ease-in;
-	}
-}
-
-@-ms-keyframes circle {
-	0% {-ms-transform: rotateY(0deg);
-		-ms-animation-timing-function: ease-in;
-	}
-	50% {-ms-transform: rotateY(180deg);
-		-ms-animation-timing-function: ease-out;
-	}
-	100% {-ms-transform: rotateY(0deg);
-		-ms-animation-timing-function: ease-in;
-	}
-}
-
-@-o-keyframes circle {
-	0% {-o-transform: rotateY(0deg);
-		-o-animation-timing-function: ease-in;
-	}
-	50% {-o-transform: rotateY(180deg);
-		-o-animation-timing-function: ease-out;
-	}
-	100% {-o-transform: rotateY(0deg);
-		-o-animation-timing-function: ease-in;
-	}
+	animation: circle 1s infinite forwards;
 }
 
 @keyframes circle {
@@ -1029,26 +436,14 @@ footer .credits {
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: $isotopeDuration;
-     -moz-transition-duration: $isotopeDuration;
-      -ms-transition-duration: $isotopeDuration;
-       -o-transition-duration: $isotopeDuration;
           transition-duration: $isotopeDuration;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
           transition-property: height, width;
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
           transition-property:         transform, opacity;
 }
 
@@ -1057,10 +452,6 @@ footer .credits {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
           transition-duration: 0s;
 }
 
@@ -1070,10 +461,6 @@ footer .credits {
 
 /* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
-  -webkit-transition: none;
-     -moz-transition: none;
-      -ms-transition: none;
-       -o-transition: none;
           transition: none;
 }
 
@@ -1096,16 +483,9 @@ footer .credits {
 	
 	background: #26292E;
 	
-	-webkit-transition: all 400ms ease-out 0s;	
-	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-		    transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
 		  
-	-webkit-transform: rotateY(0deg);
-	   -moz-transform: rotateY(0deg);
-		-ms-transform: rotateY(0deg);
-		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);	
+	transform: rotateY(0deg);	
 }
 
 
@@ -1120,27 +500,16 @@ footer .credits {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 	
-	-webkit-transition: all 400ms ease-out 0s;	
-	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-		    transition: all 400ms ease-out 0s;
+    transition: all 400ms ease-out 0s;
 		  
-	-webkit-transform: rotateY(0deg);
-	   -moz-transform: rotateY(0deg);
-		-ms-transform: rotateY(0deg);
-		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 
 .contact-icons div:hover a,
 .contact-icons div.active a {
 	background-color: $primary-color;	
 	
-	-webkit-transform: rotateY(180deg);
-	   -moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		 -o-transform: rotateY(180deg);
-		    transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .contact-icons div:hover a i,
@@ -1149,11 +518,7 @@ footer .credits {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	
-	-webkit-transform: rotateY(180deg);
-	   -moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		 -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 
@@ -1182,18 +547,6 @@ footer .credits {
 // makes isotope height change not jump immediately
 #projects {
 	transition: height $isotopeDuration;
-}
-
-.floatIcon {
-	float: right;
-}
-
-.floatIcon > i {
-	color: white;
-}
-
-.floatIcon:hover > i {
-	color: $primary-color;
 }
 
 // override fancybox skin color 
