@@ -20,7 +20,6 @@ var browserSync = require('browser-sync').create();
 gulp.task('styles', function() {
     return gulp.src('src/scss/**/*.scss')
         .pipe(plumber())
-        // sourcemaps triggers full reload
         .pipe(sourcemaps.init())
         .pipe(sass(
             {
@@ -92,7 +91,12 @@ gulp.task('html', function() {
 gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(plumber())
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(cache(
+        imagemin({ 
+            progressive: true, 
+            interlaced: true, 
+        })
+    ))
     .pipe(gulp.dest('dist/img'))
     .on('end', function () {
         gutil.log(gutil.colors.green('Images task complete!'));
@@ -112,10 +116,7 @@ gulp.task('watch', function() {
     // Watch .js files
     gulp.watch('src/js/**/*.js', ['scripts']);
 
-    // Watch HTML and livereload
     gulp.watch('./**/*.html', ['html']);
-
-    gulp.watch('src/img/**/*', ['images']);
 });
 
 // Clean
