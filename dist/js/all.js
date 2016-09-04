@@ -393,7 +393,6 @@ BRUSHED.scrollToTop = function(){
 
     var $arrow = $('#back-to-top');
     $arrow.click(function(e) {
-        debugger
         $('body,html').animate({ scrollTop: "0" }, 750, 'easeOutExpo' );
         e.preventDefault();
     })
@@ -489,7 +488,7 @@ BRUSHED.toolTip = function(){
 }
 
 /* ==================================================
-   Tooltip
+   fix hover width
 ================================================== */
 
 BRUSHED.hoverWrap = function () {
