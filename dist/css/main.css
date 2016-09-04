@@ -623,31 +623,27 @@ footer .credits {
   transition: background 0.1s linear 0s;
 }
 
-/* line 322, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 319, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top:hover {
   background-color: #228115;
 }
 
-/* line 326, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 323, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #back-to-top i {
-  font-size: 16px;
+  font-size: 28px;
   color: #FFFFFF;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -7px;
+  margin-top: -14px;
+  margin-left: -6px;
   line-height: 1em;
-}
-
-/* line 336, /Users/Taoh/git/tgreen7/src/scss/main.scss */
-#back-to-top i {
-  margin-left: -7px;
 }
 
 /* ==================================================
    Preloader
 ================================================== */
-/* line 345, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 340, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreOverlay,
 #jSplash {
   background-color: #2F3238;
@@ -657,7 +653,7 @@ footer .credits {
   z-index: 700;
 }
 
-/* line 354, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 349, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreSlide {
   position: absolute;
   top: 50% !important;
@@ -667,7 +663,7 @@ footer .credits {
   height: 100px;
 }
 
-/* line 363, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 358, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jpreLoader {
   position: relative !important;
   width: 100% !important;
@@ -675,7 +671,7 @@ footer .credits {
   top: 0 !important;
 }
 
-/* line 370, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 365, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #jprePercentage {
   width: 50px;
   height: 50px !important;
@@ -692,7 +688,7 @@ footer .credits {
           animation: circle 1s infinite forwards;
 }
 
-/* line 387, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 382, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #circle {
   position: absolute;
   top: 50%;
@@ -755,30 +751,30 @@ footer .credits {
    Isotope Filtering
 ================================================== */
 /**** Isotope Filtering ****/
-/* line 422, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 417, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 426, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 421, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 433, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 428, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope,
 .isotope .isotope-item {
   transition-duration: 0.7s;
 }
 
-/* line 438, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 433, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope {
   transition-property: height, width;
 }
 
-/* line 442, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 437, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope .isotope-item {
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -786,7 +782,7 @@ footer .credits {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 448, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 443, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -795,7 +791,7 @@ footer .credits {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 459, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 454, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .isotope.infinite-scrolling {
   transition: none;
 }
@@ -803,12 +799,12 @@ footer .credits {
 /* ==================================================
    Icons
 ================================================== */
-/* line 470, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 465, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons > div {
   margin-bottom: 20px;
 }
 
-/* line 474, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 469, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div a {
   text-align: center;
   display: inline-block;
@@ -820,7 +816,7 @@ footer .credits {
           transform: rotateY(0deg);
 }
 
-/* line 488, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 483, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div a i {
   display: inline-block;
   margin: 0;
@@ -834,7 +830,7 @@ footer .credits {
           transform: rotateY(0deg);
 }
 
-/* line 504, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 499, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div:hover a,
 .contact-icons div.active a {
   background-color: #228115;
@@ -842,7 +838,7 @@ footer .credits {
           transform: rotateY(180deg);
 }
 
-/* line 511, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 506, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .contact-icons div:hover a i,
 .contact-icons div.active a i {
   color: #FFFFFF;
@@ -855,33 +851,33 @@ footer .credits {
 /* ==================================================
    additions
 ================================================== */
-/* line 526, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 521, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-toggle {
   border: 0;
 }
 
-/* line 530, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 525, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed .icon-bar {
   background-color: white;
 }
 
-/* line 534, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 529, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
   background-color: #228115;
 }
 
-/* line 538, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 533, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
-/* line 544, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 539, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 #projects {
   transition: height 0.7s;
 }
 
-/* line 549, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 544, /Users/Taoh/git/tgreen7/src/scss/main.scss */
 .fancybox-skin {
   color: #CCCCCC;
 }

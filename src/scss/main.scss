@@ -313,10 +313,7 @@ footer .credits {
 	height: 50px;
 	z-index: 99;
 	
-	-webkit-transition: background 0.1s linear 0s;	
-	   -moz-transition: background 0.1s linear 0s;
-		 -o-transition: background 0.1s linear 0s;
-		    transition: background 0.1s linear 0s;
+    transition: background 0.1s linear 0s;
 }
 
 #back-to-top:hover {
@@ -324,18 +321,16 @@ footer .credits {
 }
 
 #back-to-top i {
-	font-size: 16px;
+	font-size: 28px;
 	color: #FFFFFF;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin-top: -7px;
+	margin-top: -14px;
+	margin-left: -6px;
 	line-height: 1em;
 }
 
-#back-to-top i {
-	margin-left: -7px;	
-}
 
 
 /* ==================================================

@@ -125,8 +125,6 @@ BRUSHED.goSection = function(){
 BRUSHED.goUp = function(){
     $('#goUp').on('click', function(){
         $target = $($(this).attr('href')).offset().top-30;
-        debugger
-        console.log('hi');
         $('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
         return false;
     });
@@ -142,8 +140,8 @@ BRUSHED.scrollToTop = function(){
         didScroll = false;
 
     var $arrow = $('#back-to-top');
-
     $arrow.click(function(e) {
+        debugger
         $('body,html').animate({ scrollTop: "0" }, 750, 'easeOutExpo' );
         e.preventDefault();
     })
@@ -264,6 +262,7 @@ $(document).ready(function(){
             $('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
         }
     });
+
     
     BRUSHED.hoverWrap();
     BRUSHED.menu();
@@ -276,28 +275,6 @@ $(document).ready(function(){
     BRUSHED.accordion();
     BRUSHED.toggle();
     BRUSHED.toolTip();
-
-
-    // $(".fancybox")
-    //     .attr('rel', 'gallery')
-    //     .fancybox({
-    //         beforeShow: function () {
-    //             if (this.title) {
-    //                 // New line
-    //                 // this.title += '<br />';
-                    
-    //                 // Add tweet button
-    //                 // this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
-                    
-    //             }
-    //         },
-    //         helpers : {
-    //             title : {
-    //                 type: 'inside'
-    //             }
-    //         }  
-    //     });
-
 
 });
 

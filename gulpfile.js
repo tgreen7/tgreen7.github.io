@@ -6,7 +6,6 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var livereload = require('gulp-livereload');
 var gutil = require('gulp-util');
 var cleanCSS = require('gulp-clean-css');
 var del = require('del');
@@ -15,13 +14,14 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync').create();
 
 // Compile Our Sass
 gulp.task('styles', function() {
     return gulp.src('src/scss/**/*.scss')
         .pipe(plumber())
         // sourcemaps triggers full reload
-        // .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass(
             {
                 outputStyle: 'expanded', 
@@ -33,10 +33,9 @@ gulp.task('styles', function() {
         // minify
         .pipe(rename({suffix: '.min'}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        // .pipe(sourcemaps.write('maps'))
+        .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('dist/css'))
-        // live reload
-        .pipe(livereload())
+        .pipe(browserSync.stream({match: '**/*.css'}))
         .on('end', function () {
             gutil.log(gutil.colors.green('Styles task complete!'));
         });
@@ -51,8 +50,6 @@ gulp.task('cssmin', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'))
-        // live reload
-        .pipe(livereload())
         .on('end', function () {
             gutil.log(gutil.colors.green('Cssmin task complete!'));
         });
@@ -67,12 +64,12 @@ gulp.task('scripts', function() {
         .pipe(plumber())
         // .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
-        // .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
+        // .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('dist/js'))
-        .pipe(livereload())
+        .pipe(browserSync.stream({match: '**/*.js'}))
         .on('end', function () {
             gutil.log(gutil.colors.green('Scripts task complete!'));
         });
@@ -85,7 +82,7 @@ gulp.task('html', function() {
             '!./node_modules/**/*'
         ])
         .pipe(plumber())
-        .pipe(livereload())
+        .pipe(browserSync.stream())
         .on('end', function () {
             gutil.log(gutil.colors.green('HTML task complete!'));
         });
@@ -104,8 +101,12 @@ gulp.task('images', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    livereload.listen();
-    
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
     // Watch .scss files
     gulp.watch('src/scss/**/*.scss', ['styles']);
     // Watch .js files
