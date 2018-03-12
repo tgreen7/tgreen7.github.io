@@ -10,12 +10,12 @@
 /* ==================================================
    Basic Styles
 ================================================== */
-/* line 5, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 5, src/scss/_basics.scss */
 html, body {
   height: 100%;
 }
 
-/* line 9, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 9, src/scss/_basics.scss */
 html, hmtl a {
   width: 100%;
   font-size: 100%;
@@ -23,7 +23,7 @@ html, hmtl a {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 16, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 16, src/scss/_basics.scss */
 body {
   background: #2F3238;
   color: #CCCCCC;
@@ -34,7 +34,7 @@ body {
   padding-top: 70px;
 }
 
-/* line 27, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 27, src/scss/_basics.scss */
 a {
   color: #228115;
   text-decoration: none;
@@ -42,7 +42,7 @@ a {
   transition: color 0.1s linear 0s;
 }
 
-/* line 38, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 38, src/scss/_basics.scss */
 a:hover,
 a:active,
 a:focus {
@@ -51,32 +51,32 @@ a:focus {
   text-decoration: none;
 }
 
-/* line 46, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 46, src/scss/_basics.scss */
 a img {
   border: none;
 }
 
-/* line 50, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 50, src/scss/_basics.scss */
 a > img {
   vertical-align: bottom;
 }
 
-/* line 54, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 54, src/scss/_basics.scss */
 img {
   max-width: none;
 }
 
-/* line 58, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 58, src/scss/_basics.scss */
 strong {
   font-weight: 500;
 }
 
-/* line 62, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 62, src/scss/_basics.scss */
 p {
   margin: 0 0 30px;
 }
 
-/* line 66, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 66, src/scss/_basics.scss */
 hr {
   border-style: dashed;
   border-color: #3C3F45;
@@ -86,55 +86,55 @@ hr {
   margin: 50px 0;
 }
 
-/* line 75, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 75, src/scss/_basics.scss */
 .align_left {
   float: left;
   margin: 0 25px 0 0px !important;
 }
 
-/* line 80, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 80, src/scss/_basics.scss */
 .align_right {
   float: right;
   margin: 0 0 0 25px !important;
 }
 
-/* line 85, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 85, src/scss/_basics.scss */
 .color-text {
   color: #228115;
 }
 
-/* line 89, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 89, src/scss/_basics.scss */
 .through {
   text-decoration: line-through;
 }
 
-/* line 93, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 93, src/scss/_basics.scss */
 input, button, select, textarea {
   font-weight: 300;
   font-family: 'Titillium Web', sans-serif;
   outline: 0;
 }
 
-/* line 99, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 99, src/scss/_basics.scss */
 input:focus,
 textarea:focus,
 input[type="text"]:focus {
   outline: 0;
 }
 
-/* line 105, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 105, src/scss/_basics.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #CCCCCC;
 }
 
-/* line 110, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 110, src/scss/_basics.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #CCCCCC;
 }
 
-/* line 115, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 115, src/scss/_basics.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #CCCCCC;
@@ -143,7 +143,7 @@ textarea::-webkit-input-placeholder {
 /* ==================================================
    Code and Pre
 ================================================== */
-/* line 124, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 124, src/scss/_basics.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -155,7 +155,7 @@ pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-/* line 133, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 133, src/scss/_basics.scss */
 code {
   padding: 2px 4px;
   border: 1px solid #dde4e9;
@@ -164,7 +164,7 @@ code {
   white-space: nowrap;
 }
 
-/* line 141, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 141, src/scss/_basics.scss */
 pre {
   display: block;
   margin: 70px 50px;
@@ -182,7 +182,7 @@ pre {
   line-height: 20px;
 }
 
-/* line 156, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 156, src/scss/_basics.scss */
 pre code {
   padding: 0;
   border: 0;
@@ -192,7 +192,7 @@ pre code {
   white-space: pre-wrap;
 }
 
-/* line 165, /Users/Taoh/git/tgreen7/src/scss/_basics.scss */
+/* line 165, src/scss/_basics.scss */
 .pre-scrollable {
   overflow-y: scroll;
   max-height: 340px;
@@ -201,7 +201,7 @@ pre code {
 /* ==================================================
    Typography
 ================================================== */
-/* line 6, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 6, src/scss/_typography.scss */
 h1,
 h2,
 h3,
@@ -215,37 +215,37 @@ h6 {
   line-height: 1.5em;
 }
 
-/* line 19, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 19, src/scss/_typography.scss */
 h1 {
   font-size: 48px;
 }
 
-/* line 23, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 23, src/scss/_typography.scss */
 h2 {
   font-size: 36px;
 }
 
-/* line 27, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 27, src/scss/_typography.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 31, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 31, src/scss/_typography.scss */
 h4 {
   font-size: 20px;
 }
 
-/* line 35, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 35, src/scss/_typography.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 39, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 39, src/scss/_typography.scss */
 h6 {
   font-size: 16px;
 }
 
-/* line 43, /Users/Taoh/git/tgreen7/src/scss/_typography.scss */
+/* line 43, src/scss/_typography.scss */
 h3.spec {
   color: #FFFFFF;
   font-size: 24px;
@@ -258,7 +258,7 @@ h3.spec {
 /* ==================================================
    Buttons
 ================================================== */
-/* line 5, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 5, src/scss/_shortcodes.scss */
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -279,7 +279,7 @@ h3.spec {
 }
 
 /*--- Hover/Active/Focus State ---*/
-/* line 32, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 32, src/scss/_shortcodes.scss */
 .button:hover,
 .button:active,
 .button:focus {
@@ -288,32 +288,32 @@ h3.spec {
 }
 
 /* --- Button Sizes --- */
-/* line 41, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 41, src/scss/_shortcodes.scss */
 .button.button-large {
   padding: 16px 30px;
   font-size: 18px;
 }
 
-/* line 46, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 46, src/scss/_shortcodes.scss */
 .button.button-small {
   padding: 8px 18px;
   font-size: 14px;
 }
 
-/* line 51, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 51, src/scss/_shortcodes.scss */
 .button.button-mini {
   padding: 4px 12px;
   font-size: 12px;
 }
 
-/* line 56, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 56, src/scss/_shortcodes.scss */
 .button.button-block {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
 }
 
-/* line 62, /Users/Taoh/git/tgreen7/src/scss/_shortcodes.scss */
+/* line 62, src/scss/_shortcodes.scss */
 .button + .button {
   margin-left: 10px;
 }
@@ -330,7 +330,7 @@ Font-Face Icons
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 17, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 17, src/scss/_fonts.scss */
 [data-icon]:before {
   font-family: 'Icons';
   content: attr(data-icon);
@@ -342,7 +342,7 @@ Font-Face Icons
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 28, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 28, src/scss/_fonts.scss */
 [class^="font-"]:before, [class*=" font-"]:before {
   font-family: 'Icons';
   speak: none;
@@ -353,7 +353,7 @@ Font-Face Icons
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 38, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 38, src/scss/_fonts.scss */
 [class^="font-"],
 [class*=" font-"] {
   display: inline-block;
@@ -366,7 +366,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="font-icon-"] {
 */
-/* line 50, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 50, src/scss/_fonts.scss */
 .font-icon-zoom-out, .font-icon-zoom-in, .font-icon-wrench, .font-icon-waves, .font-icon-warning, .font-icon-volume-up, .font-icon-volume-off, .font-icon-volume-down, .font-icon-viewport, .font-icon-user, .font-icon-user-border, .font-icon-upload, .font-icon-upload-2, .font-icon-unlock, .font-icon-underline, .font-icon-tint, .font-icon-time, .font-icon-text, .font-icon-text-width, .font-icon-text-height, .font-icon-tags, .font-icon-tag, .font-icon-table, .font-icon-strikethrough, .font-icon-stop, .font-icon-step-forward, .font-icon-step-backward, .font-icon-stars, .font-icon-star, .font-icon-star-line, .font-icon-star-half, .font-icon-sort, .font-icon-sort-up, .font-icon-sort-down, .font-icon-social-zerply, .font-icon-social-youtube, .font-icon-social-yelp, .font-icon-social-yahoo, .font-icon-social-wordpress, .font-icon-social-virb, .font-icon-social-vimeo, .font-icon-social-viddler, .font-icon-social-twitter, .font-icon-social-tumblr, .font-icon-social-stumbleupon, .font-icon-social-soundcloud, .font-icon-social-skype, .font-icon-social-share-this, .font-icon-social-quora, .font-icon-social-pinterest, .font-icon-social-photobucket, .font-icon-social-paypal, .font-icon-social-myspace, .font-icon-social-linkedin, .font-icon-social-last-fm, .font-icon-social-grooveshark, .font-icon-social-google-plus, .font-icon-social-github, .font-icon-social-forrst, .font-icon-social-flickr, .font-icon-social-facebook, .font-icon-social-evernote, .font-icon-social-envato, .font-icon-social-email, .font-icon-social-dribbble, .font-icon-social-digg, .font-icon-social-deviant-art, .font-icon-social-blogger, .font-icon-social-behance, .font-icon-social-bebo, .font-icon-social-addthis, .font-icon-social-500px, .font-icon-sitemap, .font-icon-signout, .font-icon-signin, .font-icon-signal, .font-icon-shopping-cart, .font-icon-search, .font-icon-rss, .font-icon-road, .font-icon-retweet, .font-icon-resize-vertical, .font-icon-resize-vertical-2, .font-icon-resize-small, .font-icon-resize-horizontal, .font-icon-resize-horizontal-2, .font-icon-resize-fullscreen, .font-icon-resize-full, .font-icon-repeat, .font-icon-reorder, .font-icon-remove, .font-icon-remove-sign, .font-icon-remove-circle, .font-icon-read-more, .font-icon-random, .font-icon-question-sign, .font-icon-pushpin, .font-icon-pushpin-2, .font-icon-print, .font-icon-plus, .font-icon-plus-sign, .font-icon-play, .font-icon-picture, .font-icon-phone, .font-icon-phone-sign, .font-icon-phone-boxed, .font-icon-pause, .font-icon-paste, .font-icon-paper-clip, .font-icon-ok, .font-icon-ok-sign, .font-icon-ok-circle, .font-icon-music, .font-icon-move, .font-icon-money, .font-icon-minus, .font-icon-minus-sign, .font-icon-map, .font-icon-map-marker, .font-icon-map-marker-2, .font-icon-magnet, .font-icon-magic, .font-icon-lock, .font-icon-list, .font-icon-list-3, .font-icon-list-2, .font-icon-link, .font-icon-layer, .font-icon-key, .font-icon-italic, .font-icon-info, .font-icon-indent-right, .font-icon-indent-left, .font-icon-inbox, .font-icon-inbox-empty, .font-icon-home, .font-icon-heart, .font-icon-heart-line, .font-icon-headphones, .font-icon-headphones-line, .font-icon-headphones-line-2, .font-icon-headphones-2, .font-icon-hdd, .font-icon-group, .font-icon-grid, .font-icon-grid-large, .font-icon-globe_line, .font-icon-glass, .font-icon-glass_2, .font-icon-gift, .font-icon-forward, .font-icon-font, .font-icon-folder-open, .font-icon-folder-close, .font-icon-flag, .font-icon-fire, .font-icon-film, .font-icon-file, .font-icon-file-empty, .font-icon-fast-forward, .font-icon-fast-backward, .font-icon-facetime, .font-icon-eye, .font-icon-eye_disable, .font-icon-expand-view, .font-icon-expand-view-3, .font-icon-expand-view-2, .font-icon-expand-vertical, .font-icon-expand-horizontal, .font-icon-exclamation, .font-icon-email, .font-icon-email_2, .font-icon-eject, .font-icon-edit, .font-icon-edit-check, .font-icon-download, .font-icon-download_2, .font-icon-dashboard, .font-icon-credit-card, .font-icon-copy, .font-icon-comments, .font-icon-comments-line, .font-icon-comment, .font-icon-comment-line, .font-icon-columns, .font-icon-columns-2, .font-icon-cogs, .font-icon-cog, .font-icon-cloud, .font-icon-check, .font-icon-check-empty, .font-icon-certificate, .font-icon-camera, .font-icon-calendar, .font-icon-bullhorn, .font-icon-briefcase, .font-icon-bookmark, .font-icon-book, .font-icon-bolt, .font-icon-bold, .font-icon-blockquote, .font-icon-bell, .font-icon-beaker, .font-icon-barcode, .font-icon-ban-circle, .font-icon-ban-chart, .font-icon-ban-chart-2, .font-icon-backward, .font-icon-asterisk, .font-icon-arrow-simple-up, .font-icon-arrow-simple-up-circle, .font-icon-arrow-simple-right, .font-icon-arrow-simple-right-circle, .font-icon-arrow-simple-left, .font-icon-arrow-simple-left-circle, .font-icon-arrow-simple-down, .font-icon-arrow-simple-down-circle, .font-icon-arrow-round-up, .font-icon-arrow-round-up-circle, .font-icon-arrow-round-right, .font-icon-arrow-round-right-circle, .font-icon-arrow-round-left, .font-icon-arrow-round-left-circle, .font-icon-arrow-round-down, .font-icon-arrow-round-down-circle, .font-icon-arrow-light-up, .font-icon-arrow-light-round-up, .font-icon-arrow-light-round-up-circle, .font-icon-arrow-light-round-right, .font-icon-arrow-light-round-right-circle, .font-icon-arrow-light-round-left, .font-icon-arrow-light-round-left-circle, .font-icon-arrow-light-round-down, .font-icon-arrow-light-round-down-circle, .font-icon-arrow-light-right, .font-icon-arrow-light-left, .font-icon-arrow-light-down, .font-icon-align-right, .font-icon-align-left, .font-icon-align-justify, .font-icon-align-center, .font-icon-adjust {
   font-family: 'Icons';
   speak: none;
@@ -378,1218 +378,1218 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 60, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 60, src/scss/_fonts.scss */
 .font-icon-zoom-out:before {
   content: "\e000";
 }
 
-/* line 63, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 63, src/scss/_fonts.scss */
 .font-icon-zoom-in:before {
   content: "\e001";
 }
 
-/* line 66, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 66, src/scss/_fonts.scss */
 .font-icon-wrench:before {
   content: "\e002";
 }
 
-/* line 69, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 69, src/scss/_fonts.scss */
 .font-icon-waves:before {
   content: "\e003";
 }
 
-/* line 72, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 72, src/scss/_fonts.scss */
 .font-icon-warning:before {
   content: "\e004";
 }
 
-/* line 75, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 75, src/scss/_fonts.scss */
 .font-icon-volume-up:before {
   content: "\e005";
 }
 
-/* line 78, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 78, src/scss/_fonts.scss */
 .font-icon-volume-off:before {
   content: "\e006";
 }
 
-/* line 81, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 81, src/scss/_fonts.scss */
 .font-icon-volume-down:before {
   content: "\e007";
 }
 
-/* line 84, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 84, src/scss/_fonts.scss */
 .font-icon-viewport:before {
   content: "\e008";
 }
 
-/* line 87, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 87, src/scss/_fonts.scss */
 .font-icon-user:before {
   content: "\e009";
 }
 
-/* line 90, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 90, src/scss/_fonts.scss */
 .font-icon-user-border:before {
   content: "\e00a";
 }
 
-/* line 93, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 93, src/scss/_fonts.scss */
 .font-icon-upload:before {
   content: "\e00b";
 }
 
-/* line 96, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 96, src/scss/_fonts.scss */
 .font-icon-upload-2:before {
   content: "\e00c";
 }
 
-/* line 99, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 99, src/scss/_fonts.scss */
 .font-icon-unlock:before {
   content: "\e00d";
 }
 
-/* line 102, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 102, src/scss/_fonts.scss */
 .font-icon-underline:before {
   content: "\e00e";
 }
 
-/* line 105, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 105, src/scss/_fonts.scss */
 .font-icon-tint:before {
   content: "\e00f";
 }
 
-/* line 108, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 108, src/scss/_fonts.scss */
 .font-icon-time:before {
   content: "\e010";
 }
 
-/* line 111, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 111, src/scss/_fonts.scss */
 .font-icon-text:before {
   content: "\e011";
 }
 
-/* line 114, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 114, src/scss/_fonts.scss */
 .font-icon-text-width:before {
   content: "\e012";
 }
 
-/* line 117, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 117, src/scss/_fonts.scss */
 .font-icon-text-height:before {
   content: "\e013";
 }
 
-/* line 120, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 120, src/scss/_fonts.scss */
 .font-icon-tags:before {
   content: "\e014";
 }
 
-/* line 123, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 123, src/scss/_fonts.scss */
 .font-icon-tag:before {
   content: "\e015";
 }
 
-/* line 126, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 126, src/scss/_fonts.scss */
 .font-icon-table:before {
   content: "\e016";
 }
 
-/* line 129, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 129, src/scss/_fonts.scss */
 .font-icon-strikethrough:before {
   content: "\e017";
 }
 
-/* line 132, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 132, src/scss/_fonts.scss */
 .font-icon-stop:before {
   content: "\e018";
 }
 
-/* line 135, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 135, src/scss/_fonts.scss */
 .font-icon-step-forward:before {
   content: "\e019";
 }
 
-/* line 138, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 138, src/scss/_fonts.scss */
 .font-icon-step-backward:before {
   content: "\e01a";
 }
 
-/* line 141, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 141, src/scss/_fonts.scss */
 .font-icon-stars:before {
   content: "\e01b";
 }
 
-/* line 144, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 144, src/scss/_fonts.scss */
 .font-icon-star:before {
   content: "\e01c";
 }
 
-/* line 147, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 147, src/scss/_fonts.scss */
 .font-icon-star-line:before {
   content: "\e01d";
 }
 
-/* line 150, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 150, src/scss/_fonts.scss */
 .font-icon-star-half:before {
   content: "\e01e";
 }
 
-/* line 153, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 153, src/scss/_fonts.scss */
 .font-icon-sort:before {
   content: "\e01f";
 }
 
-/* line 156, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 156, src/scss/_fonts.scss */
 .font-icon-sort-up:before {
   content: "\e020";
 }
 
-/* line 159, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 159, src/scss/_fonts.scss */
 .font-icon-sort-down:before {
   content: "\e021";
 }
 
-/* line 162, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 162, src/scss/_fonts.scss */
 .font-icon-social-zerply:before {
   content: "\e022";
 }
 
-/* line 165, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 165, src/scss/_fonts.scss */
 .font-icon-social-youtube:before {
   content: "\e023";
 }
 
-/* line 168, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 168, src/scss/_fonts.scss */
 .font-icon-social-yelp:before {
   content: "\e024";
 }
 
-/* line 171, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 171, src/scss/_fonts.scss */
 .font-icon-social-yahoo:before {
   content: "\e025";
 }
 
-/* line 174, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 174, src/scss/_fonts.scss */
 .font-icon-social-wordpress:before {
   content: "\e026";
 }
 
-/* line 177, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 177, src/scss/_fonts.scss */
 .font-icon-social-virb:before {
   content: "\e027";
 }
 
-/* line 180, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 180, src/scss/_fonts.scss */
 .font-icon-social-vimeo:before {
   content: "\e028";
 }
 
-/* line 183, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 183, src/scss/_fonts.scss */
 .font-icon-social-viddler:before {
   content: "\e029";
 }
 
-/* line 186, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 186, src/scss/_fonts.scss */
 .font-icon-social-twitter:before {
   content: "\e02a";
 }
 
-/* line 189, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 189, src/scss/_fonts.scss */
 .font-icon-social-tumblr:before {
   content: "\e02b";
 }
 
-/* line 192, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 192, src/scss/_fonts.scss */
 .font-icon-social-stumbleupon:before {
   content: "\e02c";
 }
 
-/* line 195, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 195, src/scss/_fonts.scss */
 .font-icon-social-soundcloud:before {
   content: "\e02d";
 }
 
-/* line 198, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 198, src/scss/_fonts.scss */
 .font-icon-social-skype:before {
   content: "\e02e";
 }
 
-/* line 201, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 201, src/scss/_fonts.scss */
 .font-icon-social-share-this:before {
   content: "\e02f";
 }
 
-/* line 204, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 204, src/scss/_fonts.scss */
 .font-icon-social-quora:before {
   content: "\e030";
 }
 
-/* line 207, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 207, src/scss/_fonts.scss */
 .font-icon-social-pinterest:before {
   content: "\e031";
 }
 
-/* line 210, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 210, src/scss/_fonts.scss */
 .font-icon-social-photobucket:before {
   content: "\e032";
 }
 
-/* line 213, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 213, src/scss/_fonts.scss */
 .font-icon-social-paypal:before {
   content: "\e033";
 }
 
-/* line 216, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 216, src/scss/_fonts.scss */
 .font-icon-social-myspace:before {
   content: "\e034";
 }
 
-/* line 219, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 219, src/scss/_fonts.scss */
 .font-icon-social-linkedin:before {
   content: "\e035";
 }
 
-/* line 222, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 222, src/scss/_fonts.scss */
 .font-icon-social-last-fm:before {
   content: "\e036";
 }
 
-/* line 225, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 225, src/scss/_fonts.scss */
 .font-icon-social-grooveshark:before {
   content: "\e037";
 }
 
-/* line 228, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 228, src/scss/_fonts.scss */
 .font-icon-social-google-plus:before {
   content: "\e038";
 }
 
-/* line 231, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 231, src/scss/_fonts.scss */
 .font-icon-social-github:before {
   content: "\e039";
 }
 
-/* line 234, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 234, src/scss/_fonts.scss */
 .font-icon-social-forrst:before {
   content: "\e03a";
 }
 
-/* line 237, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 237, src/scss/_fonts.scss */
 .font-icon-social-flickr:before {
   content: "\e03b";
 }
 
-/* line 240, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 240, src/scss/_fonts.scss */
 .font-icon-social-facebook:before {
   content: "\e03c";
 }
 
-/* line 243, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 243, src/scss/_fonts.scss */
 .font-icon-social-evernote:before {
   content: "\e03d";
 }
 
-/* line 246, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 246, src/scss/_fonts.scss */
 .font-icon-social-envato:before {
   content: "\e03e";
 }
 
-/* line 249, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 249, src/scss/_fonts.scss */
 .font-icon-social-email:before {
   content: "\e03f";
 }
 
-/* line 252, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 252, src/scss/_fonts.scss */
 .font-icon-social-dribbble:before {
   content: "\e040";
 }
 
-/* line 255, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 255, src/scss/_fonts.scss */
 .font-icon-social-digg:before {
   content: "\e041";
 }
 
-/* line 258, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 258, src/scss/_fonts.scss */
 .font-icon-social-deviant-art:before {
   content: "\e042";
 }
 
-/* line 261, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 261, src/scss/_fonts.scss */
 .font-icon-social-blogger:before {
   content: "\e043";
 }
 
-/* line 264, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 264, src/scss/_fonts.scss */
 .font-icon-social-behance:before {
   content: "\e044";
 }
 
-/* line 267, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 267, src/scss/_fonts.scss */
 .font-icon-social-bebo:before {
   content: "\e045";
 }
 
-/* line 270, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 270, src/scss/_fonts.scss */
 .font-icon-social-addthis:before {
   content: "\e046";
 }
 
-/* line 273, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 273, src/scss/_fonts.scss */
 .font-icon-social-500px:before {
   content: "\e047";
 }
 
-/* line 276, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 276, src/scss/_fonts.scss */
 .font-icon-sitemap:before {
   content: "\e048";
 }
 
-/* line 279, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 279, src/scss/_fonts.scss */
 .font-icon-signout:before {
   content: "\e049";
 }
 
-/* line 282, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 282, src/scss/_fonts.scss */
 .font-icon-signin:before {
   content: "\e04a";
 }
 
-/* line 285, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 285, src/scss/_fonts.scss */
 .font-icon-signal:before {
   content: "\e04b";
 }
 
-/* line 288, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 288, src/scss/_fonts.scss */
 .font-icon-shopping-cart:before {
   content: "\e04c";
 }
 
-/* line 291, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 291, src/scss/_fonts.scss */
 .font-icon-search:before {
   content: "\e04d";
 }
 
-/* line 294, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 294, src/scss/_fonts.scss */
 .font-icon-rss:before {
   content: "\e04e";
 }
 
-/* line 297, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 297, src/scss/_fonts.scss */
 .font-icon-road:before {
   content: "\e04f";
 }
 
-/* line 300, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 300, src/scss/_fonts.scss */
 .font-icon-retweet:before {
   content: "\e050";
 }
 
-/* line 303, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 303, src/scss/_fonts.scss */
 .font-icon-resize-vertical:before {
   content: "\e051";
 }
 
-/* line 306, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 306, src/scss/_fonts.scss */
 .font-icon-resize-vertical-2:before {
   content: "\e052";
 }
 
-/* line 309, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 309, src/scss/_fonts.scss */
 .font-icon-resize-small:before {
   content: "\e053";
 }
 
-/* line 312, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 312, src/scss/_fonts.scss */
 .font-icon-resize-horizontal:before {
   content: "\e054";
 }
 
-/* line 315, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 315, src/scss/_fonts.scss */
 .font-icon-resize-horizontal-2:before {
   content: "\e055";
 }
 
-/* line 318, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 318, src/scss/_fonts.scss */
 .font-icon-resize-fullscreen:before {
   content: "\e056";
 }
 
-/* line 321, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 321, src/scss/_fonts.scss */
 .font-icon-resize-full:before {
   content: "\e057";
 }
 
-/* line 324, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 324, src/scss/_fonts.scss */
 .font-icon-repeat:before {
   content: "\e058";
 }
 
-/* line 327, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 327, src/scss/_fonts.scss */
 .font-icon-reorder:before {
   content: "\e059";
 }
 
-/* line 330, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 330, src/scss/_fonts.scss */
 .font-icon-remove:before {
   content: "\e05a";
 }
 
-/* line 333, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 333, src/scss/_fonts.scss */
 .font-icon-remove-sign:before {
   content: "\e05b";
 }
 
-/* line 336, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 336, src/scss/_fonts.scss */
 .font-icon-remove-circle:before {
   content: "\e05c";
 }
 
-/* line 339, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 339, src/scss/_fonts.scss */
 .font-icon-read-more:before {
   content: "\e05d";
 }
 
-/* line 342, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 342, src/scss/_fonts.scss */
 .font-icon-random:before {
   content: "\e05e";
 }
 
-/* line 345, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 345, src/scss/_fonts.scss */
 .font-icon-question-sign:before {
   content: "\e05f";
 }
 
-/* line 348, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 348, src/scss/_fonts.scss */
 .font-icon-pushpin:before {
   content: "\e060";
 }
 
-/* line 351, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 351, src/scss/_fonts.scss */
 .font-icon-pushpin-2:before {
   content: "\e061";
 }
 
-/* line 354, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 354, src/scss/_fonts.scss */
 .font-icon-print:before {
   content: "\e062";
 }
 
-/* line 357, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 357, src/scss/_fonts.scss */
 .font-icon-plus:before {
   content: "\e063";
 }
 
-/* line 360, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 360, src/scss/_fonts.scss */
 .font-icon-plus-sign:before {
   content: "\e064";
 }
 
-/* line 363, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 363, src/scss/_fonts.scss */
 .font-icon-play:before {
   content: "\e065";
 }
 
-/* line 366, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 366, src/scss/_fonts.scss */
 .font-icon-picture:before {
   content: "\e066";
 }
 
-/* line 369, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 369, src/scss/_fonts.scss */
 .font-icon-phone:before {
   content: "\e067";
 }
 
-/* line 372, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 372, src/scss/_fonts.scss */
 .font-icon-phone-sign:before {
   content: "\e068";
 }
 
-/* line 375, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 375, src/scss/_fonts.scss */
 .font-icon-phone-boxed:before {
   content: "\e069";
 }
 
-/* line 378, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 378, src/scss/_fonts.scss */
 .font-icon-pause:before {
   content: "\e06a";
 }
 
-/* line 381, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 381, src/scss/_fonts.scss */
 .font-icon-paste:before {
   content: "\e06b";
 }
 
-/* line 384, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 384, src/scss/_fonts.scss */
 .font-icon-paper-clip:before {
   content: "\e06c";
 }
 
-/* line 387, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 387, src/scss/_fonts.scss */
 .font-icon-ok:before {
   content: "\e06d";
 }
 
-/* line 390, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 390, src/scss/_fonts.scss */
 .font-icon-ok-sign:before {
   content: "\e06e";
 }
 
-/* line 393, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 393, src/scss/_fonts.scss */
 .font-icon-ok-circle:before {
   content: "\e06f";
 }
 
-/* line 396, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 396, src/scss/_fonts.scss */
 .font-icon-music:before {
   content: "\e070";
 }
 
-/* line 399, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 399, src/scss/_fonts.scss */
 .font-icon-move:before {
   content: "\e071";
 }
 
-/* line 402, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 402, src/scss/_fonts.scss */
 .font-icon-money:before {
   content: "\e072";
 }
 
-/* line 405, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 405, src/scss/_fonts.scss */
 .font-icon-minus:before {
   content: "\e073";
 }
 
-/* line 408, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 408, src/scss/_fonts.scss */
 .font-icon-minus-sign:before {
   content: "\e074";
 }
 
-/* line 411, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 411, src/scss/_fonts.scss */
 .font-icon-map:before {
   content: "\e075";
 }
 
-/* line 414, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 414, src/scss/_fonts.scss */
 .font-icon-map-marker:before {
   content: "\e076";
 }
 
-/* line 417, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 417, src/scss/_fonts.scss */
 .font-icon-map-marker-2:before {
   content: "\e077";
 }
 
-/* line 420, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 420, src/scss/_fonts.scss */
 .font-icon-magnet:before {
   content: "\e078";
 }
 
-/* line 423, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 423, src/scss/_fonts.scss */
 .font-icon-magic:before {
   content: "\e079";
 }
 
-/* line 426, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 426, src/scss/_fonts.scss */
 .font-icon-lock:before {
   content: "\e07a";
 }
 
-/* line 429, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 429, src/scss/_fonts.scss */
 .font-icon-list:before {
   content: "\e07b";
 }
 
-/* line 432, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 432, src/scss/_fonts.scss */
 .font-icon-list-3:before {
   content: "\e07c";
 }
 
-/* line 435, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 435, src/scss/_fonts.scss */
 .font-icon-list-2:before {
   content: "\e07d";
 }
 
-/* line 438, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 438, src/scss/_fonts.scss */
 .font-icon-link:before {
   content: "\e07e";
 }
 
-/* line 441, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 441, src/scss/_fonts.scss */
 .font-icon-layer:before {
   content: "\e07f";
 }
 
-/* line 444, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 444, src/scss/_fonts.scss */
 .font-icon-key:before {
   content: "\e080";
 }
 
-/* line 447, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 447, src/scss/_fonts.scss */
 .font-icon-italic:before {
   content: "\e081";
 }
 
-/* line 450, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 450, src/scss/_fonts.scss */
 .font-icon-info:before {
   content: "\e082";
 }
 
-/* line 453, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 453, src/scss/_fonts.scss */
 .font-icon-indent-right:before {
   content: "\e083";
 }
 
-/* line 456, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 456, src/scss/_fonts.scss */
 .font-icon-indent-left:before {
   content: "\e084";
 }
 
-/* line 459, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 459, src/scss/_fonts.scss */
 .font-icon-inbox:before {
   content: "\e085";
 }
 
-/* line 462, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 462, src/scss/_fonts.scss */
 .font-icon-inbox-empty:before {
   content: "\e086";
 }
 
-/* line 465, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 465, src/scss/_fonts.scss */
 .font-icon-home:before {
   content: "\e087";
 }
 
-/* line 468, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 468, src/scss/_fonts.scss */
 .font-icon-heart:before {
   content: "\e088";
 }
 
-/* line 471, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 471, src/scss/_fonts.scss */
 .font-icon-heart-line:before {
   content: "\e089";
 }
 
-/* line 474, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 474, src/scss/_fonts.scss */
 .font-icon-headphones:before {
   content: "\e08a";
 }
 
-/* line 477, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 477, src/scss/_fonts.scss */
 .font-icon-headphones-line:before {
   content: "\e08b";
 }
 
-/* line 480, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 480, src/scss/_fonts.scss */
 .font-icon-headphones-line-2:before {
   content: "\e08c";
 }
 
-/* line 483, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 483, src/scss/_fonts.scss */
 .font-icon-headphones-2:before {
   content: "\e08d";
 }
 
-/* line 486, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 486, src/scss/_fonts.scss */
 .font-icon-hdd:before {
   content: "\e08e";
 }
 
-/* line 489, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 489, src/scss/_fonts.scss */
 .font-icon-group:before {
   content: "\e08f";
 }
 
-/* line 492, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 492, src/scss/_fonts.scss */
 .font-icon-grid:before {
   content: "\e090";
 }
 
-/* line 495, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 495, src/scss/_fonts.scss */
 .font-icon-grid-large:before {
   content: "\e091";
 }
 
-/* line 498, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 498, src/scss/_fonts.scss */
 .font-icon-globe_line:before {
   content: "\e092";
 }
 
-/* line 501, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 501, src/scss/_fonts.scss */
 .font-icon-glass:before {
   content: "\e093";
 }
 
-/* line 504, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 504, src/scss/_fonts.scss */
 .font-icon-glass_2:before {
   content: "\e094";
 }
 
-/* line 507, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 507, src/scss/_fonts.scss */
 .font-icon-gift:before {
   content: "\e095";
 }
 
-/* line 510, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 510, src/scss/_fonts.scss */
 .font-icon-forward:before {
   content: "\e096";
 }
 
-/* line 513, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 513, src/scss/_fonts.scss */
 .font-icon-font:before {
   content: "\e097";
 }
 
-/* line 516, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 516, src/scss/_fonts.scss */
 .font-icon-folder-open:before {
   content: "\e098";
 }
 
-/* line 519, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 519, src/scss/_fonts.scss */
 .font-icon-folder-close:before {
   content: "\e099";
 }
 
-/* line 522, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 522, src/scss/_fonts.scss */
 .font-icon-flag:before {
   content: "\e09a";
 }
 
-/* line 525, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 525, src/scss/_fonts.scss */
 .font-icon-fire:before {
   content: "\e09b";
 }
 
-/* line 528, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 528, src/scss/_fonts.scss */
 .font-icon-film:before {
   content: "\e09c";
 }
 
-/* line 531, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 531, src/scss/_fonts.scss */
 .font-icon-file:before {
   content: "\e09d";
 }
 
-/* line 534, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 534, src/scss/_fonts.scss */
 .font-icon-file-empty:before {
   content: "\e09e";
 }
 
-/* line 537, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 537, src/scss/_fonts.scss */
 .font-icon-fast-forward:before {
   content: "\e09f";
 }
 
-/* line 540, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 540, src/scss/_fonts.scss */
 .font-icon-fast-backward:before {
   content: "\e0a0";
 }
 
-/* line 543, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 543, src/scss/_fonts.scss */
 .font-icon-facetime:before {
   content: "\e0a1";
 }
 
-/* line 546, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 546, src/scss/_fonts.scss */
 .font-icon-eye:before {
   content: "\e0a2";
 }
 
-/* line 549, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 549, src/scss/_fonts.scss */
 .font-icon-eye_disable:before {
   content: "\e0a3";
 }
 
-/* line 552, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 552, src/scss/_fonts.scss */
 .font-icon-expand-view:before {
   content: "\e0a4";
 }
 
-/* line 555, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 555, src/scss/_fonts.scss */
 .font-icon-expand-view-3:before {
   content: "\e0a5";
 }
 
-/* line 558, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 558, src/scss/_fonts.scss */
 .font-icon-expand-view-2:before {
   content: "\e0a6";
 }
 
-/* line 561, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 561, src/scss/_fonts.scss */
 .font-icon-expand-vertical:before {
   content: "\e0a7";
 }
 
-/* line 564, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 564, src/scss/_fonts.scss */
 .font-icon-expand-horizontal:before {
   content: "\e0a8";
 }
 
-/* line 567, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 567, src/scss/_fonts.scss */
 .font-icon-exclamation:before {
   content: "\e0a9";
 }
 
-/* line 570, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 570, src/scss/_fonts.scss */
 .font-icon-email:before {
   content: "\e0aa";
 }
 
-/* line 573, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 573, src/scss/_fonts.scss */
 .font-icon-email_2:before {
   content: "\e0ab";
 }
 
-/* line 576, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 576, src/scss/_fonts.scss */
 .font-icon-eject:before {
   content: "\e0ac";
 }
 
-/* line 579, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 579, src/scss/_fonts.scss */
 .font-icon-edit:before {
   content: "\e0ad";
 }
 
-/* line 582, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 582, src/scss/_fonts.scss */
 .font-icon-edit-check:before {
   content: "\e0ae";
 }
 
-/* line 585, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 585, src/scss/_fonts.scss */
 .font-icon-download:before {
   content: "\e0af";
 }
 
-/* line 588, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 588, src/scss/_fonts.scss */
 .font-icon-download_2:before {
   content: "\e0b0";
 }
 
-/* line 591, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 591, src/scss/_fonts.scss */
 .font-icon-dashboard:before {
   content: "\e0b1";
 }
 
-/* line 594, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 594, src/scss/_fonts.scss */
 .font-icon-credit-card:before {
   content: "\e0b2";
 }
 
-/* line 597, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 597, src/scss/_fonts.scss */
 .font-icon-copy:before {
   content: "\e0b3";
 }
 
-/* line 600, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 600, src/scss/_fonts.scss */
 .font-icon-comments:before {
   content: "\e0b4";
 }
 
-/* line 603, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 603, src/scss/_fonts.scss */
 .font-icon-comments-line:before {
   content: "\e0b5";
 }
 
-/* line 606, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 606, src/scss/_fonts.scss */
 .font-icon-comment:before {
   content: "\e0b6";
 }
 
-/* line 609, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 609, src/scss/_fonts.scss */
 .font-icon-comment-line:before {
   content: "\e0b7";
 }
 
-/* line 612, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 612, src/scss/_fonts.scss */
 .font-icon-columns:before {
   content: "\e0b8";
 }
 
-/* line 615, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 615, src/scss/_fonts.scss */
 .font-icon-columns-2:before {
   content: "\e0b9";
 }
 
-/* line 618, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 618, src/scss/_fonts.scss */
 .font-icon-cogs:before {
   content: "\e0ba";
 }
 
-/* line 621, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 621, src/scss/_fonts.scss */
 .font-icon-cog:before {
   content: "\e0bb";
 }
 
-/* line 624, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 624, src/scss/_fonts.scss */
 .font-icon-cloud:before {
   content: "\e0bc";
 }
 
-/* line 627, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 627, src/scss/_fonts.scss */
 .font-icon-check:before {
   content: "\e0bd";
 }
 
-/* line 630, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 630, src/scss/_fonts.scss */
 .font-icon-check-empty:before {
   content: "\e0be";
 }
 
-/* line 633, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 633, src/scss/_fonts.scss */
 .font-icon-certificate:before {
   content: "\e0bf";
 }
 
-/* line 636, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 636, src/scss/_fonts.scss */
 .font-icon-camera:before {
   content: "\e0c0";
 }
 
-/* line 639, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 639, src/scss/_fonts.scss */
 .font-icon-calendar:before {
   content: "\e0c1";
 }
 
-/* line 642, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 642, src/scss/_fonts.scss */
 .font-icon-bullhorn:before {
   content: "\e0c2";
 }
 
-/* line 645, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 645, src/scss/_fonts.scss */
 .font-icon-briefcase:before {
   content: "\e0c3";
 }
 
-/* line 648, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 648, src/scss/_fonts.scss */
 .font-icon-bookmark:before {
   content: "\e0c4";
 }
 
-/* line 651, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 651, src/scss/_fonts.scss */
 .font-icon-book:before {
   content: "\e0c5";
 }
 
-/* line 654, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 654, src/scss/_fonts.scss */
 .font-icon-bolt:before {
   content: "\e0c6";
 }
 
-/* line 657, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 657, src/scss/_fonts.scss */
 .font-icon-bold:before {
   content: "\e0c7";
 }
 
-/* line 660, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 660, src/scss/_fonts.scss */
 .font-icon-blockquote:before {
   content: "\e0c8";
 }
 
-/* line 663, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 663, src/scss/_fonts.scss */
 .font-icon-bell:before {
   content: "\e0c9";
 }
 
-/* line 666, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 666, src/scss/_fonts.scss */
 .font-icon-beaker:before {
   content: "\e0ca";
 }
 
-/* line 669, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 669, src/scss/_fonts.scss */
 .font-icon-barcode:before {
   content: "\e0cb";
 }
 
-/* line 672, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 672, src/scss/_fonts.scss */
 .font-icon-ban-circle:before {
   content: "\e0cc";
 }
 
-/* line 675, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 675, src/scss/_fonts.scss */
 .font-icon-ban-chart:before {
   content: "\e0cd";
 }
 
-/* line 678, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 678, src/scss/_fonts.scss */
 .font-icon-ban-chart-2:before {
   content: "\e0ce";
 }
 
-/* line 681, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 681, src/scss/_fonts.scss */
 .font-icon-backward:before {
   content: "\e0cf";
 }
 
-/* line 684, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 684, src/scss/_fonts.scss */
 .font-icon-asterisk:before {
   content: "\e0d0";
 }
 
-/* line 687, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 687, src/scss/_fonts.scss */
 .font-icon-arrow-simple-up:before {
   content: "\e0d1";
 }
 
-/* line 690, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 690, src/scss/_fonts.scss */
 .font-icon-arrow-simple-up-circle:before {
   content: "\e0d2";
 }
 
-/* line 693, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 693, src/scss/_fonts.scss */
 .font-icon-arrow-simple-right:before {
   content: "\e0d3";
 }
 
-/* line 696, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 696, src/scss/_fonts.scss */
 .font-icon-arrow-simple-right-circle:before {
   content: "\e0d4";
 }
 
-/* line 699, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 699, src/scss/_fonts.scss */
 .font-icon-arrow-simple-left:before {
   content: "\e0d5";
 }
 
-/* line 702, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 702, src/scss/_fonts.scss */
 .font-icon-arrow-simple-left-circle:before {
   content: "\e0d6";
 }
 
-/* line 705, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 705, src/scss/_fonts.scss */
 .font-icon-arrow-simple-down:before {
   content: "\e0d7";
 }
 
-/* line 708, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 708, src/scss/_fonts.scss */
 .font-icon-arrow-simple-down-circle:before {
   content: "\e0d8";
 }
 
-/* line 711, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 711, src/scss/_fonts.scss */
 .font-icon-arrow-round-up:before {
   content: "\e0d9";
 }
 
-/* line 714, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 714, src/scss/_fonts.scss */
 .font-icon-arrow-round-up-circle:before {
   content: "\e0da";
 }
 
-/* line 717, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 717, src/scss/_fonts.scss */
 .font-icon-arrow-round-right:before {
   content: "\e0db";
 }
 
-/* line 720, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 720, src/scss/_fonts.scss */
 .font-icon-arrow-round-right-circle:before {
   content: "\e0dc";
 }
 
-/* line 723, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 723, src/scss/_fonts.scss */
 .font-icon-arrow-round-left:before {
   content: "\e0dd";
 }
 
-/* line 726, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 726, src/scss/_fonts.scss */
 .font-icon-arrow-round-left-circle:before {
   content: "\e0de";
 }
 
-/* line 729, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 729, src/scss/_fonts.scss */
 .font-icon-arrow-round-down:before {
   content: "\e0df";
 }
 
-/* line 732, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 732, src/scss/_fonts.scss */
 .font-icon-arrow-round-down-circle:before {
   content: "\e0e0";
 }
 
-/* line 735, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 735, src/scss/_fonts.scss */
 .font-icon-arrow-light-up:before {
   content: "\e0e1";
 }
 
-/* line 738, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 738, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-up:before {
   content: "\e0e2";
 }
 
-/* line 741, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 741, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-up-circle:before {
   content: "\e0e3";
 }
 
-/* line 744, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 744, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-right:before {
   content: "\e0e4";
 }
 
-/* line 747, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 747, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-right-circle:before {
   content: "\e0e5";
 }
 
-/* line 750, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 750, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-left:before {
   content: "\e0e6";
 }
 
-/* line 753, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 753, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-left-circle:before {
   content: "\e0e7";
 }
 
-/* line 756, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 756, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-down:before {
   content: "\e0e8";
 }
 
-/* line 759, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 759, src/scss/_fonts.scss */
 .font-icon-arrow-light-round-down-circle:before {
   content: "\e0e9";
 }
 
-/* line 762, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 762, src/scss/_fonts.scss */
 .font-icon-arrow-light-right:before {
   content: "\e0ea";
 }
 
-/* line 765, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 765, src/scss/_fonts.scss */
 .font-icon-arrow-light-left:before {
   content: "\e0eb";
 }
 
-/* line 768, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 768, src/scss/_fonts.scss */
 .font-icon-arrow-light-down:before {
   content: "\e0ec";
 }
 
-/* line 771, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 771, src/scss/_fonts.scss */
 .font-icon-align-right:before {
   content: "\e0ed";
 }
 
-/* line 774, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 774, src/scss/_fonts.scss */
 .font-icon-align-left:before {
   content: "\e0ee";
 }
 
-/* line 777, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 777, src/scss/_fonts.scss */
 .font-icon-align-justify:before {
   content: "\e0ef";
 }
 
-/* line 780, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 780, src/scss/_fonts.scss */
 .font-icon-align-center:before {
   content: "\e0f0";
 }
 
-/* line 783, /Users/Taoh/git/tgreen7/src/scss/_fonts.scss */
+/* line 783, src/scss/_fonts.scss */
 .font-icon-adjust:before {
   content: "\e0f1";
 }
 
 /*! fancyBox v2.1.4 fancyapps.com | fancyapps.com/fancybox/#license */
-/* line 2, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 2, src/scss/_fancybox.scss */
 .fancybox-wrap,
 .fancybox-skin,
 .fancybox-outer,
@@ -1607,7 +1607,7 @@ you can use the generic selector below, but it's slower:
   vertical-align: top;
 }
 
-/* line 20, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 20, src/scss/_fancybox.scss */
 .fancybox-wrap {
   position: absolute;
   top: 0;
@@ -1615,7 +1615,7 @@ you can use the generic selector below, but it's slower:
   z-index: 8020;
 }
 
-/* line 27, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 27, src/scss/_fancybox.scss */
 .fancybox-skin {
   position: relative;
   background: #2F3238;
@@ -1624,32 +1624,32 @@ you can use the generic selector below, but it's slower:
   border-radius: 0;
 }
 
-/* line 37, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 37, src/scss/_fancybox.scss */
 .fancybox-opened {
   z-index: 8030;
 }
 
-/* line 41, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 41, src/scss/_fancybox.scss */
 .fancybox-opened .fancybox-skin {
   box-shadow: none;
 }
 
-/* line 47, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 47, src/scss/_fancybox.scss */
 .fancybox-outer, .fancybox-inner {
   position: relative;
 }
 
-/* line 51, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 51, src/scss/_fancybox.scss */
 .fancybox-inner {
   overflow: hidden;
 }
 
-/* line 55, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 55, src/scss/_fancybox.scss */
 .fancybox-type-iframe .fancybox-inner {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 59, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 59, src/scss/_fancybox.scss */
 .fancybox-error {
   color: #444;
   font-size: 14px;
@@ -1659,25 +1659,25 @@ you can use the generic selector below, but it's slower:
   white-space: nowrap;
 }
 
-/* line 68, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 68, src/scss/_fancybox.scss */
 .fancybox-image, .fancybox-iframe {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 74, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 74, src/scss/_fancybox.scss */
 .fancybox-image {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 79, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 79, src/scss/_fancybox.scss */
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
   background-image: url("../fancybox/fancybox_sprite.png");
 }
 
-/* line 83, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 83, src/scss/_fancybox.scss */
 #fancybox-loading {
   position: fixed;
   top: 50%;
@@ -1690,14 +1690,14 @@ you can use the generic selector below, but it's slower:
   z-index: 8060;
 }
 
-/* line 95, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 95, src/scss/_fancybox.scss */
 #fancybox-loading div {
   width: 44px;
   height: 44px;
   background: url("../fancybox/fancybox_loading.gif") center center no-repeat;
 }
 
-/* line 101, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 101, src/scss/_fancybox.scss */
 .fancybox-close {
   position: absolute;
   right: 0;
@@ -1712,7 +1712,7 @@ you can use the generic selector below, but it's slower:
   transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
 }
 
-/* line 120, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 120, src/scss/_fancybox.scss */
 .fancybox-close i {
   left: 50%;
   top: 50%;
@@ -1723,13 +1723,13 @@ you can use the generic selector below, but it's slower:
   color: #FFFFFF;
 }
 
-/* line 130, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 130, src/scss/_fancybox.scss */
 .fancybox-close:hover {
   opacity: 1;
   background-color: #228115;
 }
 
-/* line 135, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 135, src/scss/_fancybox.scss */
 .fancybox-nav {
   position: absolute;
   top: 0;
@@ -1742,19 +1742,19 @@ you can use the generic selector below, but it's slower:
   z-index: 8040;
 }
 
-/* line 146, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 146, src/scss/_fancybox.scss */
 .fancybox-prev,
 .fancybox-prev span {
   left: 0;
 }
 
-/* line 151, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 151, src/scss/_fancybox.scss */
 .fancybox-next,
 .fancybox-next span {
   right: 0;
 }
 
-/* line 156, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 156, src/scss/_fancybox.scss */
 .fancybox-nav span {
   position: absolute;
   top: 50%;
@@ -1769,7 +1769,7 @@ you can use the generic selector below, but it's slower:
   transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
 }
 
-/* line 175, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 175, src/scss/_fancybox.scss */
 .fancybox-prev span i {
   left: 50%;
   top: 50%;
@@ -1780,7 +1780,7 @@ you can use the generic selector below, but it's slower:
   color: #FFFFFF;
 }
 
-/* line 186, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 186, src/scss/_fancybox.scss */
 .fancybox-next span i {
   left: 50%;
   top: 50%;
@@ -1791,13 +1791,13 @@ you can use the generic selector below, but it's slower:
   color: #FFFFFF;
 }
 
-/* line 196, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 196, src/scss/_fancybox.scss */
 .fancybox-nav:hover span {
   opacity: 1;
   background-color: #228115;
 }
 
-/* line 201, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 201, src/scss/_fancybox.scss */
 .fancybox-tmp {
   position: absolute;
   top: -99999px;
@@ -1809,12 +1809,12 @@ you can use the generic selector below, but it's slower:
 }
 
 /* Overlay helper */
-/* line 213, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 213, src/scss/_fancybox.scss */
 .fancybox-lock {
   margin: 0 !important;
 }
 
-/* line 217, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 217, src/scss/_fancybox.scss */
 .fancybox-overlay {
   position: absolute;
   top: 0;
@@ -1825,21 +1825,21 @@ you can use the generic selector below, but it's slower:
   background: url("../fancybox/fancybox_overlay.png");
 }
 
-/* line 227, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 227, src/scss/_fancybox.scss */
 .fancybox-overlay-fixed {
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-/* line 233, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 233, src/scss/_fancybox.scss */
 .fancybox-lock .fancybox-overlay {
   overflow: auto;
   overflow-y: scroll;
 }
 
 /* Title helper */
-/* line 240, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 240, src/scss/_fancybox.scss */
 .fancybox-title {
   visibility: hidden;
   position: relative;
@@ -1847,26 +1847,26 @@ you can use the generic selector below, but it's slower:
   z-index: 8050;
 }
 
-/* line 247, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 247, src/scss/_fancybox.scss */
 .fancybox-opened .fancybox-title {
   visibility: visible;
 }
 
-/* line 251, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 251, src/scss/_fancybox.scss */
 .fancybox-opened .fancybox-title h4 {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-/* line 257, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 257, src/scss/_fancybox.scss */
 .fancybox-opened .fancybox-title p {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 0;
 }
 
-/* line 263, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 263, src/scss/_fancybox.scss */
 .fancybox-title-float-wrap {
   position: absolute;
   bottom: 0;
@@ -1876,7 +1876,7 @@ you can use the generic selector below, but it's slower:
   text-align: center;
 }
 
-/* line 272, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 272, src/scss/_fancybox.scss */
 .fancybox-title-float-wrap .child {
   display: inline-block;
   margin-right: -100%;
@@ -1892,19 +1892,19 @@ you can use the generic selector below, but it's slower:
   white-space: nowrap;
 }
 
-/* line 288, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 288, src/scss/_fancybox.scss */
 .fancybox-title-outside-wrap {
   position: relative;
   margin-top: 10px;
   color: #fff;
 }
 
-/* line 294, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 294, src/scss/_fancybox.scss */
 .fancybox-title-inside-wrap {
   padding: 25px 30px 30px;
 }
 
-/* line 298, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+/* line 298, src/scss/_fancybox.scss */
 .fancybox-title-over-wrap {
   position: absolute;
   bottom: 0;
@@ -1916,14 +1916,14 @@ you can use the generic selector below, but it's slower:
 }
 
 @media (max-width: 480px) {
-  /* line 309, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+  /* line 309, src/scss/_fancybox.scss */
   .fancybox-nav span,
   .fancybox-nav:hover span,
   .fancybox-close,
   .fancybox-close:hover {
     background: transparent;
   }
-  /* line 316, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+  /* line 316, src/scss/_fancybox.scss */
   .fancybox-close i {
     left: 70px;
     top: 10px;
@@ -1931,7 +1931,7 @@ you can use the generic selector below, but it's slower:
 }
 
 @media (max-width: 320px) {
-  /* line 323, /Users/Taoh/git/tgreen7/src/scss/_fancybox.scss */
+  /* line 323, src/scss/_fancybox.scss */
   .fancybox-close i {
     left: 30px;
     top: 20px;
@@ -1941,7 +1941,7 @@ you can use the generic selector below, but it's slower:
 /* ==================================================
    Header
 ================================================== */
-/* line 20, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 20, src/scss/main.scss */
 .navbar-default {
   background: #26292E;
   border: 0;
@@ -1950,33 +1950,33 @@ you can use the generic selector below, but it's slower:
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 28, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 28, src/scss/main.scss */
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li.current > a,
 .navbar-default .navbar-nav > li > a:hover {
   color: #228115;
 }
 
-/* line 34, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 34, src/scss/main.scss */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
   color: white;
 }
 
-/* line 40, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 40, src/scss/main.scss */
 .navbar-default a.navbar-brand {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
 }
 
-/* line 46, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 46, src/scss/main.scss */
 .navbar-default a.navbar-brand:hover {
   color: #228115;
 }
 
-/* line 52, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 52, src/scss/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
   font-size: 16px;
@@ -1986,7 +1986,7 @@ you can use the generic selector below, but it's slower:
   text-transform: uppercase;
 }
 
-/* line 61, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 61, src/scss/main.scss */
 .navbar-default .navbar-nav > li {
   padding-left: 15px;
   padding-right: 15px;
@@ -1995,7 +1995,7 @@ you can use the generic selector below, but it's slower:
 /* ==================================================
    Section Page
 ================================================== */
-/* line 70, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 70, src/scss/main.scss */
 .page {
   background: #2F3238;
   padding: 100px 0;
@@ -2003,7 +2003,7 @@ you can use the generic selector below, but it's slower:
   z-index: 99;
 }
 
-/* line 77, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 77, src/scss/main.scss */
 .page-alternate {
   background: #26292E;
   padding: 100px 0;
@@ -2011,19 +2011,19 @@ you can use the generic selector below, but it's slower:
   z-index: 99;
 }
 
-/* line 84, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 84, src/scss/main.scss */
 .title-page {
   text-align: center;
   margin-bottom: 100px;
 }
 
-/* line 89, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 89, src/scss/main.scss */
 .title-page .title {
   font-size: 48px;
   margin: 0 0 10px 0;
 }
 
-/* line 94, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 94, src/scss/main.scss */
 .title-page .title-description {
   font-size: 24px;
   font-weight: 200;
@@ -2033,7 +2033,7 @@ you can use the generic selector below, but it's slower:
 /* ==================================================
    Section Portfolio
 ================================================== */
-/* line 104, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 104, src/scss/main.scss */
 .type-work {
   color: #FFFFFF;
   font-size: 24px;
@@ -2043,49 +2043,49 @@ you can use the generic selector below, but it's slower:
   text-transform: uppercase;
 }
 
-/* line 113, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 113, src/scss/main.scss */
 .work-nav #filters {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 119, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 119, src/scss/main.scss */
 .work-nav #filters li {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
-/* line 124, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 124, src/scss/main.scss */
 .work-nav #filters li a {
   color: #CCCCCC;
   font-size: 16px;
   display: block;
 }
 
-/* line 129, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 129, src/scss/main.scss */
 .work-nav #filters li a:hover {
   color: #FFFFFF;
 }
 
-/* line 134, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 134, src/scss/main.scss */
 .work-nav #filters li a.selected {
   color: #228115;
 }
 
-/* line 138, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 138, src/scss/main.scss */
 .item-thumbs {
   overflow: hidden;
   margin-bottom: 30px;
   cursor: pointer;
 }
 
-/* line 144, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 144, src/scss/main.scss */
 .item-thumbs a + img {
   width: 100%;
 }
 
-/* line 148, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 148, src/scss/main.scss */
 .item-thumbs .hover-wrap {
   position: absolute;
   display: block;
@@ -2093,22 +2093,20 @@ you can use the generic selector below, but it's slower:
   opacity: 0;
   filter: alpha(opacity=0);
   transition: all 450ms ease-out 0s;
-  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
   -ms-transform: rotateY(180deg) scale(0.5, 0.5);
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 168, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 168, src/scss/main.scss */
 .item-thumbs:hover .hover-wrap,
 .item-thumbs.active .hover-wrap {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: rotateY(0deg) scale(1, 1);
   -ms-transform: rotateY(0deg) scale(1, 1);
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 180, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 180, src/scss/main.scss */
 .item-thumbs .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -2118,7 +2116,7 @@ you can use the generic selector below, but it's slower:
   filter: alpha(opacity=80);
 }
 
-/* line 190, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 190, src/scss/main.scss */
 .item-thumbs .hover-wrap .overlay-img-thumb {
   position: absolute;
   top: 50%;
@@ -2131,29 +2129,29 @@ you can use the generic selector below, but it's slower:
 /* ==================================================
    About Section
 ================================================== */
-/* line 204, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 204, src/scss/main.scss */
 .profile-name {
   margin-bottom: 15px;
 }
 
-/* line 208, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 208, src/scss/main.scss */
 .profile-description {
   margin-bottom: 25px;
 }
 
-/* line 212, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 212, src/scss/main.scss */
 .image-wrap {
   position: relative;
   overflow: hidden;
   margin-bottom: 25px;
 }
 
-/* line 218, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 218, src/scss/main.scss */
 .image-wrap img {
   width: 100%;
 }
 
-/* line 223, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 223, src/scss/main.scss */
 .image-wrap .hover-wrap {
   position: absolute;
   display: block;
@@ -2162,22 +2160,20 @@ you can use the generic selector below, but it's slower:
   opacity: 0;
   filter: alpha(opacity=0);
   transition: all 450ms ease-out 0s;
-  -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
   -ms-transform: rotateY(180deg) scale(0.5, 0.5);
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
 
-/* line 244, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 244, src/scss/main.scss */
 .image-wrap:hover .hover-wrap,
 .image-wrap.active .hover-wrap {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: rotateY(0deg) scale(1, 1);
   -ms-transform: rotateY(0deg) scale(1, 1);
   transform: rotateY(0deg) scale(1, 1);
 }
 
-/* line 256, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 256, src/scss/main.scss */
 .image-wrap .hover-wrap .overlay-img {
   position: absolute;
   width: 100%;
@@ -2187,7 +2183,7 @@ you can use the generic selector below, but it's slower:
   filter: alpha(opacity=80);
 }
 
-/* line 266, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 266, src/scss/main.scss */
 .image-wrap .hover-wrap .overlay-text-thumb {
   position: absolute;
   width: 100%;
@@ -2207,7 +2203,7 @@ you can use the generic selector below, but it's slower:
 /* ==================================================
    Footer
 ================================================== */
-/* line 287, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 287, src/scss/main.scss */
 footer {
   position: relative;
   width: 100%;
@@ -2217,7 +2213,7 @@ footer {
   z-index: 99;
 }
 
-/* line 296, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 296, src/scss/main.scss */
 footer .credits {
   color: #FFFFFF;
   font-size: 13px;
@@ -2229,7 +2225,7 @@ footer .credits {
 /* ==================================================
    Back to Top
 ================================================== */
-/* line 308, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 308, src/scss/main.scss */
 #back-to-top {
   display: none;
   background-color: #3C3F45;
@@ -2243,12 +2239,12 @@ footer .credits {
   transition: background 0.1s linear 0s;
 }
 
-/* line 322, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 322, src/scss/main.scss */
 #back-to-top:hover {
   background-color: #228115;
 }
 
-/* line 326, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 326, src/scss/main.scss */
 #back-to-top i {
   font-size: 16px;
   color: #FFFFFF;
@@ -2259,7 +2255,7 @@ footer .credits {
   line-height: 1em;
 }
 
-/* line 336, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 336, src/scss/main.scss */
 #back-to-top i {
   margin-left: -7px;
 }
@@ -2267,7 +2263,7 @@ footer .credits {
 /* ==================================================
    Preloader
 ================================================== */
-/* line 346, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 346, src/scss/main.scss */
 #jpreOverlay,
 #jSplash {
   background-color: #2F3238;
@@ -2277,7 +2273,7 @@ footer .credits {
   z-index: 700;
 }
 
-/* line 355, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 355, src/scss/main.scss */
 #jpreSlide {
   position: absolute;
   top: 50% !important;
@@ -2287,7 +2283,7 @@ footer .credits {
   height: 100px;
 }
 
-/* line 364, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 364, src/scss/main.scss */
 #jpreLoader {
   position: relative !important;
   width: 100% !important;
@@ -2295,7 +2291,7 @@ footer .credits {
   top: 0 !important;
 }
 
-/* line 371, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 371, src/scss/main.scss */
 #jprePercentage {
   width: 50px;
   height: 50px !important;
@@ -2308,11 +2304,10 @@ footer .credits {
   z-index: 800;
   font-size: 24px;
   color: #FFFFFF;
-  -webkit-animation: circle 1s infinite forwards;
-          animation: circle 1s infinite forwards;
+  animation: circle 1s infinite forwards;
 }
 
-/* line 388, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 388, src/scss/main.scss */
 #circle {
   position: absolute;
   top: 50%;
@@ -2325,49 +2320,21 @@ footer .credits {
   border-radius: 999px;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-animation: circle 1s infinite forwards;
-          animation: circle 1s infinite forwards;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
+  animation: circle 1s infinite forwards;
 }
 
 @keyframes circle {
   0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: rotateY(0deg);
+    animation-timing-function: ease-in;
   }
   50% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: rotateY(180deg);
+    animation-timing-function: ease-out;
   }
   100% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: rotateY(0deg);
+    animation-timing-function: ease-in;
   }
 }
 
@@ -2375,38 +2342,36 @@ footer .credits {
    Isotope Filtering
 ================================================== */
 /**** Isotope Filtering ****/
-/* line 423, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 423, src/scss/main.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 427, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 427, src/scss/main.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 434, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 434, src/scss/main.scss */
 .isotope,
 .isotope .isotope-item {
   transition-duration: 0.7s;
 }
 
-/* line 439, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 439, src/scss/main.scss */
 .isotope {
   transition-property: height, width;
 }
 
-/* line 443, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 443, src/scss/main.scss */
 .isotope .isotope-item {
-  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 449, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 449, src/scss/main.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -2415,7 +2380,7 @@ footer .credits {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 460, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 460, src/scss/main.scss */
 .isotope.infinite-scrolling {
   transition: none;
 }
@@ -2423,12 +2388,12 @@ footer .credits {
 /* ==================================================
    Icons
 ================================================== */
-/* line 471, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 471, src/scss/main.scss */
 .contact-icons > div {
   margin-bottom: 20px;
 }
 
-/* line 475, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 475, src/scss/main.scss */
 .contact-icons div a {
   text-align: center;
   display: inline-block;
@@ -2436,11 +2401,10 @@ footer .credits {
   height: 70px;
   background: #26292E;
   transition: all 400ms ease-out 0s;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
-/* line 489, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 489, src/scss/main.scss */
 .contact-icons div a i {
   display: inline-block;
   margin: 0;
@@ -2450,58 +2414,55 @@ footer .credits {
   opacity: 0.3;
   filter: alpha(opacity=30);
   transition: all 400ms ease-out 0s;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
-/* line 505, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 505, src/scss/main.scss */
 .contact-icons div:hover a,
 .contact-icons div.active a {
   background-color: #228115;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-/* line 512, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 512, src/scss/main.scss */
 .contact-icons div:hover a i,
 .contact-icons div.active a i {
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* ==================================================
    additions
 ================================================== */
-/* line 527, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 527, src/scss/main.scss */
 .navbar-toggle {
   border: 0;
 }
 
-/* line 531, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 531, src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed .icon-bar {
   background-color: white;
 }
 
-/* line 535, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 535, src/scss/main.scss */
 .navbar-default .navbar-toggle.collapsed:hover .icon-bar {
   background-color: #228115;
 }
 
-/* line 539, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 539, src/scss/main.scss */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
-/* line 545, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 545, src/scss/main.scss */
 #projects {
   transition: height 0.7s;
 }
 
-/* line 550, /Users/Taoh/git/tgreen7/src/scss/main.scss */
+/* line 550, src/scss/main.scss */
 .fancybox-skin {
   color: #CCCCCC;
 }
